@@ -6,7 +6,6 @@ target 'ZegoCallInvitationDemo' do
   use_frameworks!
 
   # Pods for ZegoCallInvitationDemo
-   pod  'ZegoExpressEngine'
-   pod  'ZIM'
+  pod  'ZegoUIKit'
 
 end

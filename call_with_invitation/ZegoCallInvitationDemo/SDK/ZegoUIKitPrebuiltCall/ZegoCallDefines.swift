@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import ZegoUIKitSDK
 
 public enum ZegoMenuBarButtonType: Int {
     case quitButton
@@ -36,13 +37,12 @@ enum ZegoUIKitCallIconSetType: String, Hashable {
     case call_accept_selected_icon
     case call_video_icon
     case call_video_selected_icon
+    case icon_more
+    case icon_more_light
     
     // MARK: - Image handling
-    
-    private static let bundle = Bundle(identifier: bundleIdentifier)
-    
     func load() -> UIImage {
-        let image = UIImage(named: self.rawValue, in: ZegoUIKitCallIconSetType.bundle, compatibleWith: nil)!
+        let image = UIImage.resource.loadImage(name: self.rawValue, bundleName: "ZegoUIKitPrebuiltCall") ?? UIImage()
         return image
     }
 }
@@ -58,8 +58,6 @@ func adaptLandscapeWidth(_ x: CGFloat) -> CGFloat {
 func adaptLandscapeHeight(_ x: CGFloat) -> CGFloat {
     return x * (UIkitScreenHeight / 818.0)
 }
-
-let bundleIdentifier: String = "im.zego.uikit"
 
 func currentViewController() -> (UIViewController?) {
    var window = UIApplication.shared.keyWindow

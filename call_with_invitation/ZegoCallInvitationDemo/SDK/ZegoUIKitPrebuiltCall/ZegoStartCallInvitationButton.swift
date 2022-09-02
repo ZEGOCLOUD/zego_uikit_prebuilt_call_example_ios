@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ZegoUIKitSDK
 
 public class ZegoStartCallInvitationButton: ZegoStartInvitationButton {
 
@@ -34,7 +35,7 @@ public class ZegoStartCallInvitationButton: ZegoStartInvitationButton {
         super.init(coder: coder)
     }
     
-    override func buttonClick() {
+    public override func buttonClick() {
         guard let userID = ZegoUIKit.shared.localUserInfo?.userID else { return }
         let callData = ZegoCallInvitationData()
         callData.callID = String(format: "call_%@", userID)

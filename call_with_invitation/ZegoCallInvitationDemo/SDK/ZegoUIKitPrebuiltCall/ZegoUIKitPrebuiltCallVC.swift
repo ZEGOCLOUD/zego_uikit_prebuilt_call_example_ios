@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ZegoUIKitSDK
 
 public protocol ZegoUIKitPrebuiltCallVCDelegate: AnyObject {
     func getForegroundView(_ userInfo: ZegoUIkitUser?) -> UIView?
@@ -90,22 +91,22 @@ open class ZegoUIKitPrebuiltCallVC: UIViewController {
         super.viewWillDisappear(animated)
         self.timer = nil
     }
+    
+    open override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.avContainer.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        self.menuBar.frame = CGRect.init(x: 0, y: self.view.frame.size.height - adaptLandscapeHeight(61), width: self.view.frame.size.width, height: adaptLandscapeHeight(61))
+    }
 
     public func addButtonToMenuBar(_ button: UIButton) {
         self.menuBar.addButtonToMenuBar(button)
     }
     
     func setupLayout() {
-        self.avContainer.view?.zgu_constraint(equalTo: self.view, left: 0, right: 0, top: 0, bottom: 0)
         self.avContainer.setLayout(self.config.layout.mode, config: self.config.layout.config)
-        self.avContainer.view.frame = CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
-        
         self.menuBar.backgroundColor = UIColor.clear
         self.menuBar.delegate = self
-        self.menuBar.frame = CGRect.init(x: 0, y: UIScreen.main.bounds.size.height - adaptLandscapeHeight(61), width: UIScreen.main.bounds.size.width, height: adaptLandscapeHeight(61))
-        
         ZegoUIKit.shared.setAudioOutputToSpeaker(enable: self.config.useSpeakerWhenjoining)
-        
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(tapClick))
         self.view.addGestureRecognizer(tap)
@@ -174,7 +175,7 @@ open class ZegoUIKitPrebuiltCallVC: UIViewController {
     }
 }
 
-extension ZegoUIKitPrebuiltCallVC: ZegoAVContainerComponentDelegate {
+extension ZegoUIKitPrebuiltCallVC: ZegoAudioVideoContainerDelegate {
     
     public func getForegroundView(_ userInfo: ZegoUIkitUser?) -> UIView? {
         guard let userInfo = userInfo else {

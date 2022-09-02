@@ -28,14 +28,15 @@ class ZegoCallMoreView: UIViewController {
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor.colorWithHexString("000000", alpha: 0.5)
         self.view.addSubview(self.topLine)
-        self.topLine.zgu_constraint(equalTo: self.view, top: adaptLandscapeHeight(7), centerX: self.view.center.x)
-        self.topLine.zgu_constraint(width: adaptLandscapeWidth(40), height: adaptLandscapeHeight(5))
         self.view.addSubview(self.containerView)
         self.setupLayout()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        self.topLine.bounds = CGRect(x: 0, y: 0, width: adaptLandscapeWidth(40), height: adaptLandscapeHeight(5))
+        self.topLine.center = CGPoint(x: self.view.center.x, y: adaptLandscapeHeight(7) + adaptLandscapeHeight(2.5))
+        self.setupLayout()
     }
     
     var buttonList:[UIView] = [] {
@@ -54,14 +55,12 @@ class ZegoCallMoreView: UIViewController {
         let itemHeight: CGFloat = adaptLandscapeWidth(38) + adaptLandscapeHeight(14) + 2
         let space: CGFloat = adaptLandscapeHeight(15) * CGFloat((lines - 1))
         self.containerHeight = itemHeight * CGFloat(lines) + space * CGFloat(lines - 1) + adaptLandscapeHeight(47)
-        
-        self.containerView.zgu_constraint(equalTo: self.view, left: 0, right: 0, bottom: 0)
-        self.containerView.zgu_constraint(width: self.view.bounds.size.width, height: self.containerHeight)
+        self.containerView.frame = CGRect(x: 0, y: self.view.frame.size.height - self.containerHeight, width: self.view.frame.size.width, height: self.containerHeight)
         
         var index: Int = 0
         var lastView: UIView?
         for button in buttonList {
-            button.removeAllConstraints()
+            button.call_removeAllConstraints()
             self.containerView.addSubview(button)
             if button.bounds.size.width == 0 {
                 button.bounds.size = CGSize(width: adaptLandscapeWidth(43), height: adaptLandscapeHeight(54))
