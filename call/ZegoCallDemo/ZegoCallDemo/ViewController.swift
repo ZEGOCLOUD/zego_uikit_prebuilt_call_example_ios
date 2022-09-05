@@ -7,6 +7,7 @@
 
 import UIKit
 import ZegoUIKitPrebuiltCall
+import ZegoUIKitSDK
 
 class ViewController: UIViewController {
     
@@ -35,7 +36,7 @@ class ViewController: UIViewController {
     @IBAction func makeNewCall(_ sender: Any) {
         
         let config: ZegoUIkitPrebuiltCallConfig = ZegoUIkitPrebuiltCallConfig()
-        let audioVideoConfig: ZegoAudioVideoViewConfig = ZegoAudioVideoViewConfig()
+        let audioVideoConfig: ZegoPrebuiltAudioVideoViewConfig = ZegoPrebuiltAudioVideoViewConfig()
         let menuBarConfig: ZegoBottomMenuBarConfig = ZegoBottomMenuBarConfig()
         config.audioVideoViewConfig = audioVideoConfig
         config.bottomMenuBarConfig = menuBarConfig
