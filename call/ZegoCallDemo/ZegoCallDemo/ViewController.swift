@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     
     let selfUserID: String = String(format: "%d", Int.random(in: 0...99999))
     var selfUserName: String?
-    let yourAppID: UInt32 = 3630571287
-    let yourAppSign: String = "12a16a0cca137778fa220bf84b8af7b82ae75cddd85d7e9ca3de01d240ab1a05"
+    let yourAppID: UInt32 = <#yourAppID#>
+    let yourAppSign: String = <#yourAppSign#>
     
     @IBOutlet weak var userIDLabel: UILabel! {
         didSet {
