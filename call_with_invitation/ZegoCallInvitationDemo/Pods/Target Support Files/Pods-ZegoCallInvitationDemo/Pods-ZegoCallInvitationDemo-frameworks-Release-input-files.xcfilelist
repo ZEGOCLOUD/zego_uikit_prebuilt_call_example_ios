@@ -1,4 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-ZegoCallInvitationDemo/Pods-ZegoCallInvitationDemo-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/ZIM/ZIM.framework/ZIM
-${PODS_XCFRAMEWORKS_BUILD_DIR}/ZegoExpressEngine/Video/ZegoExpressEngine.framework/ZegoExpressEngine
-${PODS_XCFRAMEWORKS_BUILD_DIR}/ZegoUIKit/ZegoUIKitSDK.framework/ZegoUIKitSDK
