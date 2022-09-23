@@ -35,17 +35,7 @@ class ViewController: UIViewController {
     
     @IBAction func makeNewCall(_ sender: Any) {
         
-        let config: ZegoUIkitPrebuiltCallConfig = ZegoUIkitPrebuiltCallConfig()
-        let audioVideoConfig: ZegoPrebuiltAudioVideoViewConfig = ZegoPrebuiltAudioVideoViewConfig()
-        let menuBarConfig: ZegoBottomMenuBarConfig = ZegoBottomMenuBarConfig()
-        config.audioVideoViewConfig = audioVideoConfig
-        config.bottomMenuBarConfig = menuBarConfig
-        let layout: ZegoLayout = ZegoLayout()
-        layout.mode = .pictureInPicture
-        let pipConfig: ZegoLayoutPictureInPictureConfig = ZegoLayoutPictureInPictureConfig()
-        pipConfig.smallViewPostion = .topRight
-        layout.config = pipConfig
-        config.layout = layout
+        let config: ZegoUIKitPrebuiltCallConfig = ZegoUIKitPrebuiltCallConfig(.oneOnOneVideoCall)
         let callVC = ZegoUIKitPrebuiltCallVC.init(yourAppID, appSign: yourAppSign, userID: selfUserID, userName: self.selfUserName ?? "", callID: "100", config: config)
         callVC.modalPresentationStyle = .fullScreen
         self.present(callVC, animated: true, completion: nil)
