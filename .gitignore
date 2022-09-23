@@ -89,4 +89,5 @@ fastlane/test_output
 
 iOSInjectionProject/
 call/ZegoCallDemo/Pods
-call_with_invitation/ZegoCallInvitationDemo/Pods
+group_call/ZegoGroupCallDemo/Pods
+*.xcscheme
