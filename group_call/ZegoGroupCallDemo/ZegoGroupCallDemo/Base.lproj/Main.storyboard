@@ -48,7 +48,7 @@
                                     <action selector="makeGroupCall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rXu-pP-HpQ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1001" borderStyle="roundedRect" placeholder="call_id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vo7-zk-qGQ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test_call_id" borderStyle="roundedRect" placeholder="call_id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vo7-zk-qGQ">
                                 <rect key="frame" x="100" y="378.5" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>

@@ -18,13 +18,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var userIDLabel: UILabel! {
         didSet {
-            userIDLabel.text = selfUserID
+            userIDLabel.text = String(format: "userid:%@", selfUserID)
         }
     }
     @IBOutlet weak var userNameLabel: UILabel! {
         didSet {
             selfUserName = String(format: "zego_%@", selfUserID)
-            userNameLabel.text = selfUserName
+            userNameLabel.text = String(format: "username:%@", selfUserName!)
         }
     }
     
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     
     @IBAction func makeVoiceGroupCall(_ sender: Any) {
         let groupCallConfig: ZegoUIKitPrebuiltCallConfig = ZegoUIKitPrebuiltCallConfig(.groupVoiceCall)
-        let callVC = ZegoUIKitPrebuiltCallVC.init(yourAppID, appSign: yourAppSign, userID: self.selfUserID, userName: self.selfUserName ?? "", callID: self.callTextField.text ?? "1001", config: groupCallConfig)
+        let callVC = ZegoUIKitPrebuiltCallVC.init(yourAppID, appSign: yourAppSign, userID: self.selfUserID, userName: self.selfUserName ?? "", callID: self.callTextField.text ?? "test_call_id", config: groupCallConfig)
         callVC.modalPresentationStyle = .fullScreen
         self.present(callVC, animated: true, completion: nil)
     }
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     
     @IBAction func makeGroupCall(_ sender: Any) {
         let groupCallConfig: ZegoUIKitPrebuiltCallConfig = ZegoUIKitPrebuiltCallConfig(.groupVideoCall)
-        let callVC = ZegoUIKitPrebuiltCallVC.init(yourAppID, appSign: yourAppSign, userID: self.selfUserID, userName: self.selfUserName ?? "", callID: self.callTextField.text ?? "1001", config: groupCallConfig)
+        let callVC = ZegoUIKitPrebuiltCallVC.init(yourAppID, appSign: yourAppSign, userID: self.selfUserID, userName: self.selfUserName ?? "", callID: self.callTextField.text ?? "test_call_id", config: groupCallConfig)
         callVC.modalPresentationStyle = .fullScreen
         self.present(callVC, animated: true, completion: nil)
     }
