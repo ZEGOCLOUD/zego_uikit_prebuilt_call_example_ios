@@ -40,18 +40,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xX-do-9ST" customClass="ZegoStartCallInvitationButton" customModule="ZegoUIKitCallWithInvitation" customModuleProvider="target">
-                                <rect key="frame" x="211.5" y="532" width="167.5" height="42"/>
-                                <color key="backgroundColor" red="0.95686274509803915" green="0.96862745098039216" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="OGU-4S-Qe0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Video call" image="icon_camera_un">
-                                    <color key="titleColor" red="0.396078431372549" green="0.40000000000000002" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the Call，e.g.666" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3fO-Nr-jNh">
                                 <rect key="frame" x="35" y="224" width="344" height="42"/>
                                 <constraints>
@@ -115,50 +103,52 @@
                                 <color key="textColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCG-z8-RUT" customClass="ZegoStartCallInvitationButton" customModule="ZegoUIKitCallWithInvitation" customModuleProvider="target">
-                                <rect key="frame" x="35" y="532" width="163.5" height="42"/>
-                                <color key="backgroundColor" red="0.95686274509803915" green="0.96862745098039216" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VL4-dL-l6l">
+                                <rect key="frame" x="35" y="532" width="165.5" height="42"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="LgY-4m-5OE"/>
+                                    <constraint firstAttribute="height" constant="42" id="2Bo-bh-9OP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Voice call" image="icon_iphone_un">
-                                    <color key="titleColor" red="0.396078431372549" green="0.40000000000000002" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mIN-GE-ZQC">
+                                <rect key="frame" x="213.5" y="532" width="165.5" height="42"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="zgV-hK-7Cb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ERp-np-YTv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="0CM-FL-DuJ"/>
                             <constraint firstItem="FM7-hX-oaN" firstAttribute="top" secondItem="KNh-4W-9aR" secondAttribute="bottom" constant="5" id="0KN-nE-Nce"/>
-                            <constraint firstItem="8xX-do-9ST" firstAttribute="leading" secondItem="WCG-z8-RUT" secondAttribute="trailing" constant="13" id="0UO-T1-36H"/>
                             <constraint firstItem="9fR-1e-yqI" firstAttribute="top" secondItem="3fO-Nr-jNh" secondAttribute="bottom" constant="20" id="4Gw-iT-sCa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3fO-Nr-jNh" secondAttribute="trailing" constant="35" id="4w5-fz-m7F"/>
                             <constraint firstItem="3fO-Nr-jNh" firstAttribute="top" secondItem="ypa-cV-fIk" secondAttribute="bottom" constant="5" id="65W-Qg-BYt"/>
-                            <constraint firstItem="8xX-do-9ST" firstAttribute="width" secondItem="WCG-z8-RUT" secondAttribute="width" multiplier="1.02703" id="7Bc-DN-cql"/>
+                            <constraint firstItem="mIN-GE-ZQC" firstAttribute="leading" secondItem="VL4-dL-l6l" secondAttribute="trailing" constant="13" id="7tk-Pc-PmQ"/>
                             <constraint firstItem="vLK-ZR-cdE" firstAttribute="width" secondItem="9fR-1e-yqI" secondAttribute="width" multiplier="1.01724" id="9wp-Td-swg"/>
                             <constraint firstItem="FM7-hX-oaN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="A7W-df-02X"/>
                             <constraint firstItem="zvv-RF-Sm8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="DHK-a5-rRA"/>
                             <constraint firstItem="KNh-4W-9aR" firstAttribute="top" secondItem="zvv-RF-Sm8" secondAttribute="bottom" constant="27" id="DWy-Oe-mLe"/>
                             <constraint firstItem="vLK-ZR-cdE" firstAttribute="leading" secondItem="9fR-1e-yqI" secondAttribute="trailing" constant="13" id="FAu-Jp-a8v"/>
+                            <constraint firstItem="mIN-GE-ZQC" firstAttribute="top" secondItem="FM7-hX-oaN" secondAttribute="bottom" constant="20" id="Fmc-Rf-z6F"/>
                             <constraint firstItem="ERp-np-YTv" firstAttribute="top" secondItem="hao-hJ-2ld" secondAttribute="bottom" constant="40" id="M31-7u-kwA"/>
                             <constraint firstItem="hao-hJ-2ld" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Qkn-mK-Ybq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8xX-do-9ST" secondAttribute="trailing" constant="35" id="SZc-S2-c1g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mIN-GE-ZQC" secondAttribute="trailing" constant="35" id="Ryy-Ik-1v7"/>
                             <constraint firstItem="9fR-1e-yqI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="TI6-FY-xfL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vLK-ZR-cdE" secondAttribute="trailing" constant="35" id="X8B-FB-LkN"/>
+                            <constraint firstItem="VL4-dL-l6l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Ygw-Lb-6wO"/>
                             <constraint firstItem="ypa-cV-fIk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Zem-2L-gE1"/>
+                            <constraint firstItem="VL4-dL-l6l" firstAttribute="top" secondItem="FM7-hX-oaN" secondAttribute="bottom" constant="20" id="fJe-PG-zc7"/>
                             <constraint firstItem="ypa-cV-fIk" firstAttribute="top" secondItem="ERp-np-YTv" secondAttribute="bottom" constant="27" id="gYK-Rz-kwq"/>
-                            <constraint firstItem="WCG-z8-RUT" firstAttribute="top" secondItem="FM7-hX-oaN" secondAttribute="bottom" constant="20" id="hsA-SX-Syg"/>
                             <constraint firstItem="3fO-Nr-jNh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="k7Z-GT-sw8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FM7-hX-oaN" secondAttribute="trailing" constant="35" id="pFW-Jx-Cyv"/>
                             <constraint firstItem="hao-hJ-2ld" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="r6i-oG-GZG"/>
                             <constraint firstItem="KNh-4W-9aR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="tUz-1m-pvJ"/>
                             <constraint firstItem="vLK-ZR-cdE" firstAttribute="top" secondItem="3fO-Nr-jNh" secondAttribute="bottom" constant="20" id="vQI-5H-rpO"/>
-                            <constraint firstItem="WCG-z8-RUT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="wmZ-c4-Qdc"/>
                             <constraint firstItem="zvv-RF-Sm8" firstAttribute="top" secondItem="9fR-1e-yqI" secondAttribute="bottom" constant="63" id="xQ9-S5-Lms"/>
-                            <constraint firstItem="8xX-do-9ST" firstAttribute="top" secondItem="FM7-hX-oaN" secondAttribute="bottom" constant="20" id="zn8-eg-QnN"/>
+                            <constraint firstItem="VL4-dL-l6l" firstAttribute="width" secondItem="mIN-GE-ZQC" secondAttribute="width" id="xVx-aP-Eg8"/>
                         </constraints>
                     </view>
                     <connections>
@@ -168,8 +158,8 @@
                         <outlet property="oneOnOneVoiceButton" destination="9fR-1e-yqI" id="Pmk-qe-Gyn"/>
                         <outlet property="userIDTextField" destination="hao-hJ-2ld" id="fyF-xU-m3g"/>
                         <outlet property="userIdLabel" destination="hao-hJ-2ld" id="GGm-22-Dk9"/>
-                        <outlet property="videoCallButton" destination="8xX-do-9ST" id="r9A-NN-YZf"/>
-                        <outlet property="voiceCallButton" destination="WCG-z8-RUT" id="ND5-Al-z2i"/>
+                        <outlet property="videoCallView" destination="mIN-GE-ZQC" id="iuS-7k-Yhr"/>
+                        <outlet property="voiceCallView" destination="VL4-dL-l6l" id="fKJ-Hs-woa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -178,8 +168,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_camera_un" width="20" height="20"/>
-        <image name="icon_iphone_un" width="23" height="23"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

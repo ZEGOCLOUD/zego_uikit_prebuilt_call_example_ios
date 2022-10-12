@@ -7,12 +7,12 @@
 
 import UIKit
 import ZegoUIKitSDK
-//import ZegoUIKitPrebuiltCall
+import ZegoUIKitPrebuiltCall
 
 class ViewController: UIViewController {
     
-    let appID: UInt32 = 252984006
-    let appSign: String = "7328c93dfd9c7cf300818cde931c661b545bfc098fce80c722fdbd8d1a3b262a"
+    let appID: UInt32 = <#YourAppID#>
+    let appSign: String = <#YourAppSign#>
 
     @IBOutlet weak var userIdLabel: UILabel! {
         didSet {
@@ -68,22 +68,46 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var voiceCallButton: ZegoStartCallInvitationButton! {
+    
+    @IBOutlet weak var voiceCallView: UIView! {
         didSet {
-            voiceCallButton.isVideoCall = false
-            voiceCallButton.layer.masksToBounds = true
-            voiceCallButton.layer.cornerRadius = 9.0
+            let callButton = ZegoStartCallInvitationButton(.voiceCall)
+            callButton.frame = CGRect(x: 0, y: 0, width: voiceCallView.bounds.size.width, height: voiceCallView.bounds.size.height)
+            self.voiceCallButton = callButton
+            voiceCallView.addSubview(callButton)
         }
     }
     
-    @IBOutlet weak var videoCallButton: ZegoStartCallInvitationButton! {
+    @IBOutlet weak var videoCallView: UIView! {
         didSet {
-            videoCallButton.isVideoCall = true
+            let callButton = ZegoStartCallInvitationButton(.videoCall)
+            callButton.frame = CGRect(x: 0, y: 0, width: videoCallView.bounds.size.width, height: videoCallView.bounds.size.height)
+            self.videoCallButton = callButton
+            videoCallView.addSubview(callButton)
+        }
+    }
+    
+    var voiceCallButton: ZegoStartCallInvitationButton! {
+        didSet {
+            voiceCallButton.setImage(UIImage.init(named: "icon_iphone_un"), for: .normal)
+            voiceCallButton.layer.masksToBounds = true
+            voiceCallButton.layer.cornerRadius = 9.0
+            voiceCallButton.setTitle("Voice call", for: .normal)
+            voiceCallButton.setTitleColor(UIColor.colorWithHexString("#656667"), for: .normal)
+        }
+    }
+    
+    var videoCallButton: ZegoStartCallInvitationButton! {
+        didSet {
+            videoCallButton.setImage(UIImage.init(named: "icon_camera_un"), for: .normal)
             videoCallButton.setImage(UIImage.init(named: "icon_camera_normal"), for: .highlighted)
             videoCallButton.layer.masksToBounds = true
             videoCallButton.layer.cornerRadius = 9.0
+            videoCallButton.setTitle("Video call", for: .normal)
+            videoCallButton.setTitleColor(UIColor.colorWithHexString("#656667"), for: .normal)
         }
     }
+
     
     var selfUserID: String?
     var selfUserName: String?
