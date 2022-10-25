@@ -7,91 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86AF423B28A1051100726444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AF423A28A1051100726444 /* AppDelegate.swift */; };
-		86AF423F28A1051100726444 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AF423E28A1051100726444 /* ViewController.swift */; };
-		86AF424228A1051100726444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86AF424028A1051100726444 /* Main.storyboard */; };
-		86AF424428A1051200726444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86AF424328A1051200726444 /* Assets.xcassets */; };
-		86AF424728A1051300726444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86AF424528A1051300726444 /* LaunchScreen.storyboard */; };
-		A35210CC362A19837291EC29 /* Pods_ZegoUIKitCallWithInvitation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0775237B4D11753DCD6CD31 /* Pods_ZegoUIKitCallWithInvitation.framework */; };
+		08BFB08F21F8F560F7D56589 /* Pods_ZegoUIKitCallWithInvitationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24376A5ECF6C2670243DE16 /* Pods_ZegoUIKitCallWithInvitationDemo.framework */; };
+		86BDBAF52900F3470039563D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDBAF42900F3470039563D /* AppDelegate.swift */; };
+		86BDBAF92900F3470039563D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDBAF82900F3470039563D /* ViewController.swift */; };
+		86BDBAFC2900F3470039563D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BDBAFA2900F3470039563D /* Main.storyboard */; };
+		86BDBAFE2900F3480039563D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86BDBAFD2900F3480039563D /* Assets.xcassets */; };
+		86BDBB012900F3480039563D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BDBAFF2900F3480039563D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		613E7C064F58862A4DED1193 /* Pods-ZegoUIKitCallWithInvitation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitCallWithInvitation.release.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitCallWithInvitation/Pods-ZegoUIKitCallWithInvitation.release.xcconfig"; sourceTree = "<group>"; };
-		861A132F28C1D95900839533 /* ZegoUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZegoUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		861A133228C1D99600839533 /* ZegoUIKitSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZegoUIKitSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		861A13AA28C5CB7C00839533 /* ZegoUIKitSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZegoUIKitSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86AF423728A1051100726444 /* ZegoUIKitCallWithInvitation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZegoUIKitCallWithInvitation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		86AF423A28A1051100726444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86AF423E28A1051100726444 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		86AF424128A1051100726444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		86AF424328A1051200726444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		86AF424628A1051300726444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		86AF424828A1051300726444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86AF429B28A200DD00726444 /* ZegoUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZegoUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0775237B4D11753DCD6CD31 /* Pods_ZegoUIKitCallWithInvitation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZegoUIKitCallWithInvitation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D54D6C1667E3601DB0090EA4 /* Pods-ZegoUIKitCallWithInvitation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitCallWithInvitation.debug.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitCallWithInvitation/Pods-ZegoUIKitCallWithInvitation.debug.xcconfig"; sourceTree = "<group>"; };
+		0229AF401BA70717750C99C2 /* Pods-ZegoUIKitCallWithInvitationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitCallWithInvitationDemo.release.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitCallWithInvitationDemo/Pods-ZegoUIKitCallWithInvitationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		86BDBAF12900F3470039563D /* ZegoUIKitCallWithInvitationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZegoUIKitCallWithInvitationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86BDBAF42900F3470039563D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86BDBAF82900F3470039563D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86BDBAFB2900F3470039563D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86BDBAFD2900F3480039563D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86BDBB002900F3480039563D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86BDBB022900F3480039563D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86BDBB462900F48F0039563D /* ZegoUIKitSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZegoUIKitSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24376A5ECF6C2670243DE16 /* Pods_ZegoUIKitCallWithInvitationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZegoUIKitCallWithInvitationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26F652BF02DB0B516E62F6A /* Pods-ZegoUIKitCallWithInvitationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitCallWithInvitationDemo.debug.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitCallWithInvitationDemo/Pods-ZegoUIKitCallWithInvitationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		86AF423428A1051100726444 /* Frameworks */ = {
+		86BDBAEE2900F3470039563D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35210CC362A19837291EC29 /* Pods_ZegoUIKitCallWithInvitation.framework in Frameworks */,
+				08BFB08F21F8F560F7D56589 /* Pods_ZegoUIKitCallWithInvitationDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		76604087E27995E56A488028 /* Pods */ = {
+		7B2D90AE5A4717BC9CB5B35A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D54D6C1667E3601DB0090EA4 /* Pods-ZegoUIKitCallWithInvitation.debug.xcconfig */,
-				613E7C064F58862A4DED1193 /* Pods-ZegoUIKitCallWithInvitation.release.xcconfig */,
+				F26F652BF02DB0B516E62F6A /* Pods-ZegoUIKitCallWithInvitationDemo.debug.xcconfig */,
+				0229AF401BA70717750C99C2 /* Pods-ZegoUIKitCallWithInvitationDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		86AF422E28A1051100726444 = {
+		86BDBAE82900F3470039563D = {
 			isa = PBXGroup;
 			children = (
-				86AF423928A1051100726444 /* ZegoUIKitCallWithInvitation */,
-				86AF423828A1051100726444 /* Products */,
-				76604087E27995E56A488028 /* Pods */,
-				CFBE8C02F3571FCC254DCBAC /* Frameworks */,
+				86BDBAF32900F3470039563D /* ZegoUIKitCallWithInvitationDemo */,
+				86BDBAF22900F3470039563D /* Products */,
+				7B2D90AE5A4717BC9CB5B35A /* Pods */,
+				CCB695A639E230519BBA7188 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		86AF423828A1051100726444 /* Products */ = {
+		86BDBAF22900F3470039563D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				86AF423728A1051100726444 /* ZegoUIKitCallWithInvitation.app */,
+				86BDBAF12900F3470039563D /* ZegoUIKitCallWithInvitationDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		86AF423928A1051100726444 /* ZegoUIKitCallWithInvitation */ = {
+		86BDBAF32900F3470039563D /* ZegoUIKitCallWithInvitationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				86AF423A28A1051100726444 /* AppDelegate.swift */,
-				86AF423E28A1051100726444 /* ViewController.swift */,
-				86AF424028A1051100726444 /* Main.storyboard */,
-				86AF424328A1051200726444 /* Assets.xcassets */,
-				86AF424528A1051300726444 /* LaunchScreen.storyboard */,
-				86AF424828A1051300726444 /* Info.plist */,
+				86BDBAF42900F3470039563D /* AppDelegate.swift */,
+				86BDBAF82900F3470039563D /* ViewController.swift */,
+				86BDBAFA2900F3470039563D /* Main.storyboard */,
+				86BDBAFD2900F3480039563D /* Assets.xcassets */,
+				86BDBAFF2900F3480039563D /* LaunchScreen.storyboard */,
+				86BDBB022900F3480039563D /* Info.plist */,
 			);
-			path = ZegoUIKitCallWithInvitation;
+			path = ZegoUIKitCallWithInvitationDemo;
 			sourceTree = "<group>";
 		};
-		CFBE8C02F3571FCC254DCBAC /* Frameworks */ = {
+		CCB695A639E230519BBA7188 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				861A13AA28C5CB7C00839533 /* ZegoUIKitSDK.framework */,
-				861A133228C1D99600839533 /* ZegoUIKitSDK.framework */,
-				861A132F28C1D95900839533 /* ZegoUIKit.framework */,
-				86AF429B28A200DD00726444 /* ZegoUIKit.framework */,
-				A0775237B4D11753DCD6CD31 /* Pods_ZegoUIKitCallWithInvitation.framework */,
+				86BDBB462900F48F0039563D /* ZegoUIKitSDK.framework */,
+				B24376A5ECF6C2670243DE16 /* Pods_ZegoUIKitCallWithInvitationDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,41 +93,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		86AF423628A1051100726444 /* ZegoUIKitCallWithInvitation */ = {
+		86BDBAF02900F3470039563D /* ZegoUIKitCallWithInvitationDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86AF424B28A1051300726444 /* Build configuration list for PBXNativeTarget "ZegoUIKitCallWithInvitation" */;
+			buildConfigurationList = 86BDBB052900F3480039563D /* Build configuration list for PBXNativeTarget "ZegoUIKitCallWithInvitationDemo" */;
 			buildPhases = (
-				96EE2C5104662697EFF37A04 /* [CP] Check Pods Manifest.lock */,
-				86AF423328A1051100726444 /* Sources */,
-				86AF423428A1051100726444 /* Frameworks */,
-				86AF423528A1051100726444 /* Resources */,
-				F282B3EBC83AA6C4B2056ABD /* [CP] Embed Pods Frameworks */,
+				650083C905250B0025FB3AF8 /* [CP] Check Pods Manifest.lock */,
+				86BDBAED2900F3470039563D /* Sources */,
+				86BDBAEE2900F3470039563D /* Frameworks */,
+				86BDBAEF2900F3470039563D /* Resources */,
+				B90A0C5DBAE8E0B454D854B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ZegoUIKitCallWithInvitation;
-			productName = ZegoUIKitCallWithInvitation;
-			productReference = 86AF423728A1051100726444 /* ZegoUIKitCallWithInvitation.app */;
+			name = ZegoUIKitCallWithInvitationDemo;
+			productName = ZegoUIKitCallWithInvitationDemo;
+			productReference = 86BDBAF12900F3470039563D /* ZegoUIKitCallWithInvitationDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		86AF422F28A1051100726444 /* Project object */ = {
+		86BDBAE92900F3470039563D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					86AF423628A1051100726444 = {
+					86BDBAF02900F3470039563D = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 86AF423228A1051100726444 /* Build configuration list for PBXProject "ZegoUIKitCallWithInvitation" */;
+			buildConfigurationList = 86BDBAEC2900F3470039563D /* Build configuration list for PBXProject "ZegoUIKitCallWithInvitationDemo" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,31 +135,31 @@
 				en,
 				Base,
 			);
-			mainGroup = 86AF422E28A1051100726444;
-			productRefGroup = 86AF423828A1051100726444 /* Products */;
+			mainGroup = 86BDBAE82900F3470039563D;
+			productRefGroup = 86BDBAF22900F3470039563D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				86AF423628A1051100726444 /* ZegoUIKitCallWithInvitation */,
+				86BDBAF02900F3470039563D /* ZegoUIKitCallWithInvitationDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		86AF423528A1051100726444 /* Resources */ = {
+		86BDBAEF2900F3470039563D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86AF424728A1051300726444 /* LaunchScreen.storyboard in Resources */,
-				86AF424428A1051200726444 /* Assets.xcassets in Resources */,
-				86AF424228A1051100726444 /* Main.storyboard in Resources */,
+				86BDBB012900F3480039563D /* LaunchScreen.storyboard in Resources */,
+				86BDBAFE2900F3480039563D /* Assets.xcassets in Resources */,
+				86BDBAFC2900F3470039563D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		96EE2C5104662697EFF37A04 /* [CP] Check Pods Manifest.lock */ = {
+		650083C905250B0025FB3AF8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -180,57 +174,57 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZegoUIKitCallWithInvitation-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ZegoUIKitCallWithInvitationDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F282B3EBC83AA6C4B2056ABD /* [CP] Embed Pods Frameworks */ = {
+		B90A0C5DBAE8E0B454D854B9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitCallWithInvitation/Pods-ZegoUIKitCallWithInvitation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitCallWithInvitationDemo/Pods-ZegoUIKitCallWithInvitationDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitCallWithInvitation/Pods-ZegoUIKitCallWithInvitation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitCallWithInvitationDemo/Pods-ZegoUIKitCallWithInvitationDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitCallWithInvitation/Pods-ZegoUIKitCallWithInvitation-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitCallWithInvitationDemo/Pods-ZegoUIKitCallWithInvitationDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		86AF423328A1051100726444 /* Sources */ = {
+		86BDBAED2900F3470039563D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86AF423F28A1051100726444 /* ViewController.swift in Sources */,
-				86AF423B28A1051100726444 /* AppDelegate.swift in Sources */,
+				86BDBAF92900F3470039563D /* ViewController.swift in Sources */,
+				86BDBAF52900F3470039563D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		86AF424028A1051100726444 /* Main.storyboard */ = {
+		86BDBAFA2900F3470039563D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				86AF424128A1051100726444 /* Base */,
+				86BDBAFB2900F3470039563D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		86AF424528A1051300726444 /* LaunchScreen.storyboard */ = {
+		86BDBAFF2900F3480039563D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				86AF424628A1051300726444 /* Base */,
+				86BDBB002900F3480039563D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -238,7 +232,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		86AF424928A1051300726444 /* Debug */ = {
+		86BDBB032900F3480039563D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -299,7 +293,7 @@
 			};
 			name = Debug;
 		};
-		86AF424A28A1051300726444 /* Release */ = {
+		86BDBB042900F3480039563D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -354,33 +348,32 @@
 			};
 			name = Release;
 		};
-		86AF424C28A1051300726444 /* Debug */ = {
+		86BDBB062900F3480039563D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D54D6C1667E3601DB0090EA4 /* Pods-ZegoUIKitCallWithInvitation.debug.xcconfig */;
+			baseConfigurationReference = F26F652BF02DB0B516E62F6A /* Pods-ZegoUIKitCallWithInvitationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = B82BHJ5H89;
-				ENABLE_BITCODE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ZegoUIKitCallWithInvitation/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ZegoPrebuiltCall;
+				INFOPLIST_FILE = ZegoUIKitCallWithInvitationDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to help you join the call.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need to use your mic to help you join the call.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zegocloud.uikit.zegoprebuiltcall;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zegocloud.uikit.callwithinvitation.ZegoUIKitCallWithInvitationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -388,33 +381,32 @@
 			};
 			name = Debug;
 		};
-		86AF424D28A1051300726444 /* Release */ = {
+		86BDBB072900F3480039563D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 613E7C064F58862A4DED1193 /* Pods-ZegoUIKitCallWithInvitation.release.xcconfig */;
+			baseConfigurationReference = 0229AF401BA70717750C99C2 /* Pods-ZegoUIKitCallWithInvitationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = B82BHJ5H89;
-				ENABLE_BITCODE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ZegoUIKitCallWithInvitation/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ZegoPrebuiltCall;
+				INFOPLIST_FILE = ZegoUIKitCallWithInvitationDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to help you join the call.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need to use your mic to help you join the call.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zegocloud.uikit.zegoprebuiltcall;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zegocloud.uikit.callwithinvitation.ZegoUIKitCallWithInvitationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -425,25 +417,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		86AF423228A1051100726444 /* Build configuration list for PBXProject "ZegoUIKitCallWithInvitation" */ = {
+		86BDBAEC2900F3470039563D /* Build configuration list for PBXProject "ZegoUIKitCallWithInvitationDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86AF424928A1051300726444 /* Debug */,
-				86AF424A28A1051300726444 /* Release */,
+				86BDBB032900F3480039563D /* Debug */,
+				86BDBB042900F3480039563D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86AF424B28A1051300726444 /* Build configuration list for PBXNativeTarget "ZegoUIKitCallWithInvitation" */ = {
+		86BDBB052900F3480039563D /* Build configuration list for PBXNativeTarget "ZegoUIKitCallWithInvitationDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86AF424C28A1051300726444 /* Debug */,
-				86AF424D28A1051300726444 /* Release */,
+				86BDBB062900F3480039563D /* Debug */,
+				86BDBB072900F3480039563D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 86AF422F28A1051100726444 /* Project object */;
+	rootObject = 86BDBAE92900F3470039563D /* Project object */;
 }
