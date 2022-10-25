@@ -151,7 +151,7 @@ extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UIText
           }
         }
        let vc = window?.rootViewController
-       return currentViewController(vc)
+       return vc
     }
 }
 
