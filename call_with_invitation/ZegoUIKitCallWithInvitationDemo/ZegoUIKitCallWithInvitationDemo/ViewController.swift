@@ -48,8 +48,8 @@ class ViewController: UIViewController {
         }
     }
     
-    let voiceCallButton: ZegoStartCallInvitationButton = ZegoStartCallInvitationButton(.voiceCall)
-    let videoCallButton: ZegoStartCallInvitationButton = ZegoStartCallInvitationButton(.videoCall)
+    let voiceCallButton: ZegoStartCallInvitationButton = ZegoStartCallInvitationButton(ZegoInvitationType.voiceCall.rawValue)
+    let videoCallButton: ZegoStartCallInvitationButton = ZegoStartCallInvitationButton(ZegoInvitationType.videoCall.rawValue)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,13 +63,13 @@ class ViewController: UIViewController {
     @objc func textDidChange(_ textField: UITextField) {
         guard let userIDString = textField.text else { return }
         let userIDList = userIDString.components(separatedBy: ",")
-        var inviteesList: [ZegoUIkitUser] = []
+        var inviteesList: [ZegoUIKitUser] = []
         for userID in userIDList {
             let userName: String = String(format: "%@", userID)
             if userID == "" {
                 continue
             }
-            let user: ZegoUIkitUser = ZegoUIkitUser.init(userID, userName)
+            let user: ZegoUIKitUser = ZegoUIKitUser.init(userID, userName)
             inviteesList.append(user)
         }
         self.voiceCallButton.inviteeList = inviteesList
