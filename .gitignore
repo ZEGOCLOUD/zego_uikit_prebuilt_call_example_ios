@@ -91,4 +91,5 @@ iOSInjectionProject/
 call/ZegoCallDemo/Pods
 call_with_invitation/ZegoUIKitCallWithInvitationDemo/Pods
 group_call/ZegoGroupCallDemo/Pods
+call_with_offline_invitation/ZegoGroupCallDemo/Pods
 *.xcscheme
