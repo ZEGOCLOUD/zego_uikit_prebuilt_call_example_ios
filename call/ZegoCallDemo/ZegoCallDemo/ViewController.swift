@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     var selfUserName: String?
     let yourAppID: UInt32 = <#yourAppID#>
     let yourAppSign: String = <#yourAppSign#>
-    
     @IBOutlet weak var userIDLabel: UILabel! {
         didSet {
             userIDLabel.text = selfUserID
@@ -35,7 +34,7 @@ class ViewController: UIViewController {
     
     @IBAction func makeNewCall(_ sender: Any) {
         
-        let config: ZegoUIKitPrebuiltCallConfig = ZegoUIKitPrebuiltCallConfig(.oneOnOneVideoCall)
+        let config: ZegoUIKitPrebuiltCallConfig = ZegoUIKitPrebuiltCallConfig.oneOnOneVideoCall()
         let callVC = ZegoUIKitPrebuiltCallVC.init(yourAppID, appSign: yourAppSign, userID: selfUserID, userName: self.selfUserName ?? "", callID: "100", config: config)
         callVC.modalPresentationStyle = .fullScreen
         self.present(callVC, animated: true, completion: nil)

@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func makeVoiceGroupCall(_ sender: Any) {
-        let groupCallConfig: ZegoUIKitPrebuiltCallConfig = ZegoUIKitPrebuiltCallConfig(.groupVoiceCall)
+        let groupCallConfig: ZegoUIKitPrebuiltCallConfig = ZegoUIKitPrebuiltCallConfig.groupVoiceCall()
         let callVC = ZegoUIKitPrebuiltCallVC.init(yourAppID, appSign: yourAppSign, userID: self.selfUserID, userName: self.selfUserName ?? "", callID: self.callTextField.text ?? "test_call_id", config: groupCallConfig)
         callVC.modalPresentationStyle = .fullScreen
         self.present(callVC, animated: true, completion: nil)
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func makeGroupCall(_ sender: Any) {
-        let groupCallConfig: ZegoUIKitPrebuiltCallConfig = ZegoUIKitPrebuiltCallConfig(.groupVideoCall)
+        let groupCallConfig: ZegoUIKitPrebuiltCallConfig = ZegoUIKitPrebuiltCallConfig.groupVideoCall()
         let callVC = ZegoUIKitPrebuiltCallVC.init(yourAppID, appSign: yourAppSign, userID: self.selfUserID, userName: self.selfUserName ?? "", callID: self.callTextField.text ?? "test_call_id", config: groupCallConfig)
         callVC.modalPresentationStyle = .fullScreen
         self.present(callVC, animated: true, completion: nil)

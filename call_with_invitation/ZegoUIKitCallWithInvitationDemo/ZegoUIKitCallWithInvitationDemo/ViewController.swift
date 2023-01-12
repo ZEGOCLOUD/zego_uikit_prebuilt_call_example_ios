@@ -48,8 +48,8 @@ class ViewController: UIViewController {
         }
     }
     
-    let voiceCallButton: ZegoStartCallInvitationButton = ZegoStartCallInvitationButton(ZegoInvitationType.voiceCall.rawValue)
-    let videoCallButton: ZegoStartCallInvitationButton = ZegoStartCallInvitationButton(ZegoInvitationType.videoCall.rawValue)
+    let voiceCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.voiceCall.rawValue)
+    let videoCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.videoCall.rawValue)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,53 +82,48 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UITextFieldDelegate, ZegoStartInvitationButtonDelegate {
+extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UITextFieldDelegate, ZegoSendCallInvitationButtonDelegate {
     //MARK: -ZegoUIKitPrebuiltCallInvitationServiceDelegate
     func requireConfig(_ data: ZegoCallInvitationData) -> ZegoUIKitPrebuiltCallConfig {
         if data.type == .voiceCall {
             if data.invitees?.count ?? 0 > 1 {
-                let config = ZegoUIKitPrebuiltCallConfig(.groupVoiceCall)
+                let config = ZegoUIKitPrebuiltCallConfig.groupVoiceCall()
                 return config
             } else {
-                let config = ZegoUIKitPrebuiltCallConfig(.oneOnOneVoiceCall)
+                let config = ZegoUIKitPrebuiltCallConfig.oneOnOneVoiceCall()
                 return config
             }
         } else {
             if data.invitees?.count ?? 0 > 1 {
-                let config = ZegoUIKitPrebuiltCallConfig(.groupVideoCall)
+                let config = ZegoUIKitPrebuiltCallConfig.groupVideoCall()
                 return config
             } else {
-                let config = ZegoUIKitPrebuiltCallConfig(.oneOnOneVideoCall)
+                let config = ZegoUIKitPrebuiltCallConfig.oneOnOneVideoCall()
                 return config
             }
         }
     }
     
-    //MARK: -ZegoStartInvitationButtonDelegate
-    func onStartInvitationButtonClick(_ data: [String : AnyObject]?) {
-        guard let data = data else {
-            return
-        }
-        let code: Int = data["code"] as! Int
-        let message: String? = data["message"] as? String
+    //MARK: -ZegoSendCallInvitationButtonDelegate
+    func onPressed(_ errorCode: Int, errorMessage: String?, errorInvitees: [ZegoUIKitPrebuiltCall.ZegoCallUser]?) {
         var toastMessage: String?
-        if code != 0 {
-            toastMessage = String(format: "Failed to send a call invitation. code: %d,message:%@",code, message ?? "")
+        if errorCode != 0 {
+            toastMessage = String(format: "Failed to send a call invitation. code: %d,message:%@",errorCode, errorMessage ?? "")
             self.view.makeToast(toastMessage, duration: 2.0, position: .center)
         } else {
-            let errorInvitees: [String]? = data["errorInvitees"] as? [String]
+            let errorInvitees: [ZegoCallUser]? = errorInvitees
             guard let errorInvitees = errorInvitees else { return }
             var errorUsers: String = ""
             var index: Int = 0
-            for userID in errorInvitees {
+            for user in errorInvitees {
                 if index > 4 {
                     errorUsers.append(contentsOf: "...")
                     break
                 }
                 if index == 0 {
-                    errorUsers.append(contentsOf: String(format: "%@", userID))
+                    errorUsers.append(contentsOf: String(format: "%@", user.id ?? ""))
                 } else {
-                    errorUsers.append(contentsOf: String(format: ",%@", userID))
+                    errorUsers.append(contentsOf: String(format: ",%@", user.id ?? ""))
                 }
                 index = index + 1
             }
