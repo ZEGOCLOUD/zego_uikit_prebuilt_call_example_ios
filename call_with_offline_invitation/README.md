@@ -24,8 +24,8 @@
 
 ## Receive call invitation notifications
 
-- receive call invitation notifications, do the following: https://storage.zego.im/sdk-doc/doc/video/ZegoUIKit/callkit_zpns_config2.mov
-<video poster="http://storage.zego.im/Pics/ZegoUIKit/videos/how_to_enable_offline_call_invitation_ios.png" src="https://storage.zego.im/sdk-doc/doc/video/ZegoUIKit/callkit_zpns_config2.mov" width="80%" preload="auto" controls></video>
+- receive call invitation notifications, do the following: 
+    [![Watch the video](https://storage.zego.im/sdk-doc/Pics/ZegoUIKit/videos/how_to_enable_offline_call_invitation_ios.png)](https://youtu.be/rzdRY8bDqdo)
 
 
 ## Configure your project
