@@ -2,7 +2,7 @@
 
 - - -
 
-<img src="https://storage.zego.im/sdk-doc/Pics/ZegoUIKit/Flutter/call/invitation_calls.gif" >
+![one](https://storage.zego.im/sdk-doc/Pics/ZegoUIKit/Flutter/call/invitation_calls.gif)
 
 ## Recommended resources
 
@@ -37,6 +37,7 @@
 <string>Access permission to microphone is required.</string>
 ```
 <image src="https://storage.zego.im/sdk-doc/Pics/ZegoUIKit/iOS/add_mic_camera_permissions.png">
+
 ### Get the APNs device token
 - In the `AppDelegate.swift` file, implement Apple's register callback for receiving the `deviceToken`:
 
