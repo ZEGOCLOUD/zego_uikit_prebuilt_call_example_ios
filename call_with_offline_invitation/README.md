@@ -4,16 +4,6 @@
 
 ![invitation_calls](https://storage.zego.im/sdk-doc/Pics/ZegoUIKit/Flutter/call/invitation_calls.gif)
 
-## Recommended resources
-
-- I want to get started, Follow the steps to get started swiftly: [Quick Start](https://docs.zegocloud.com/article/14819)
-
-- To configure prebuilt UI for a custom experience: [Custom Prebuilt UI](https://docs.zegocloud.com/article/14765)
-
-- To finest-grained build a call, you may try antoher one: [Video Call SDK](https://docs.zegocloud.com/article/5540)
-
-- If you have any questions regarding bugs and feature requests, visit the [ZEGOCLOUD community](https://discord.gg/EtNRATttyp) or email us at global_support@zegocloud.com.
-
 ## Prerequisites
 
 - Go to [ZEGOCLOUD Admin Console](https://console.zegocloud.com), and do the following:
@@ -21,6 +11,31 @@
   - Activate the **In-app Chat** service (as shown in the following figure).
 
 ![ActivateZIMinConsole](https://storage.zego.im/sdk-doc/Pics/InappChat/ActivateZIMinConsole2.png)
+
+
+## Integrate the SDK
+
+### Add dependencies
+
+Do the following to add the `ZegoUIKitPrebuiltCall` dependencies:
+
+- Open Terminal, navigate to your project's root directory, and run the following to create a `podfile`: 
+
+    ```
+    pod init
+    ```
+- Edit the `Podfile` file to add the basic dependency:
+
+    ```
+    pod 'ZegoUIKitPrebuiltCall'
+    pod 'ZegoUIKitSignalingPlugin'
+    ```
+
+- In Terminal, run the following to download all required dependencies and SDK with Cocoapods:
+
+    ```
+    pod install
+    ```
 
 ## Receive call invitation notifications
 
@@ -48,32 +63,6 @@
   }
 ```
 <image src="https://storage.zego.im/sdk-doc/Pics/ZegoUIKit/iOS/device_token.png">
-
-
-## Integrate the SDK
-
-### Add dependencies
-
-Do the following to add the `ZegoUIKitPrebuiltCall` dependencies:
-
-- Open Terminal, navigate to your project's root directory, and run the following to create a `podfile`: 
-
-    ```
-    pod init
-    ```
-- Edit the `Podfile` file to add the basic dependency:
-
-    ```
-    pod 'ZegoUIKitPrebuiltCall'
-    pod 'ZegoUIKitSignalingPlugin'
-    ```
-
-- In Terminal, run the following to download all required dependencies and SDK with Cocoapods:
-
-    ```
-    pod install
-    ```
-
 
 ## Using the Call Kit
 ### Set up a button for making a voice call.
@@ -136,3 +125,13 @@ class ViewController: UIViewController {
 Now you have finished all the steps!
 
 You can simply click the **Run** in XCode to run and test your App on your device.
+
+## Recommended resources
+
+- I want to get started, Follow the steps to get started swiftly: [Quick Start](https://docs.zegocloud.com/article/14819)
+
+- To configure prebuilt UI for a custom experience: [Custom Prebuilt UI](https://docs.zegocloud.com/article/14765)
+
+- To finest-grained build a call, you may try antoher one: [Video Call SDK](https://docs.zegocloud.com/article/5540)
+
+- If you have any questions regarding bugs and feature requests, visit the [ZEGOCLOUD community](https://discord.gg/EtNRATttyp) or email us at global_support@zegocloud.com.
