@@ -2,38 +2,7 @@
 
 - - -
 
-**Call Kit** is a prebuilt feature-rich call component, which enables you to build **one-on-one and group voice/video calls** into your app with only a few lines of code.
-
-And it includes the business logic with the UI, you can add or remove features accordingly by customizing UI components.
-
-
 <img src="https://storage.zego.im/sdk-doc/Pics/ZegoUIKit/Flutter/call/invitation_calls.gif" >
-
-
-## When do you need the Call Kit
-
-- Build apps faster and easier
-  - When you want to prototype 1-on-1 or group voice/video calls **ASAP** 
-  - Consider **speed or efficiency** as the first priority
-  - Call Kit allows you to integrate **in minutes**
-
-- Customize UI and features as needed
-  - When you want to customize in-call features **based on actual business needs**
-  - **Less time wasted** developing basic features
-  - Call Kit includes the business logic along with the UI, allows you to **customize features accordingly**
-
-
-
-
-## Embedded features
-
-- Ready-to-use one-on-one/group calls
-- Customizable UI styles
-- Real-time sound waves display
-- Device management
-- Switch views during a one-on-one call
-- Extendable top/bottom menu bar
-- Participant list
 
 ## Recommended resources
 
@@ -70,13 +39,14 @@ And it includes the business logic with the UI, you can add or remove features a
 <image src="https://storage.zego.im/sdk-doc/Pics/ZegoUIKit/iOS/add_mic_camera_permissions.png">
 ### Get the APNs device token
 - In the `AppDelegate.swift` file, implement Apple's register callback for receiving the `deviceToken`:
+
 ```swift
   func application(_ application: UIApplication,    didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data){
     /// Required - Set the device token
     ZegoUIKitPrebuiltCallInvitationService.setRemoteNotificationsDeviceToken(deviceToken)
   }
 ```
-<image src="https://storage.zego.im/sdk-doc//Pics/ZegoUIKit/iOS/device_token.png">
+<image src="https://storage.zego.im/sdk-doc/Pics/ZegoUIKit/iOS/device_token.png">
 
 
 ## Integrate the SDK
