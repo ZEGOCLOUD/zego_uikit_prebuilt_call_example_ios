@@ -2,7 +2,7 @@
 
 - - -
 
-![one](https://storage.zego.im/sdk-doc/Pics/ZegoUIKit/Flutter/call/invitation_calls.gif)
+![invitation_calls](https://storage.zego.im/sdk-doc/Pics/ZegoUIKit/Flutter/call/invitation_calls.gif)
 
 ## Recommended resources
 
