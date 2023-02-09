@@ -13,8 +13,8 @@ import ZegoUIKitPrebuiltCall
 
 class ViewController: UIViewController {
     
-    let appID: UInt32 = 123
-    let appSign: String = "123"
+    let appID: UInt32 = <#YourAppID#>
+    let appSign: String = <#YourAppSign#>
     
     let selfUserID: String = String(format: "%d", Int.random(in: 0...99999))
     
