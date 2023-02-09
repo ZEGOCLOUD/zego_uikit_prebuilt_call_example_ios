@@ -13,8 +13,8 @@ import ZegoUIKitPrebuiltCall
 
 class ViewController: UIViewController {
     
-    let appID: UInt32 = <#YourAppID#>
-    let appSign: String = <#YourAppSign#>
+    let appID: UInt32 = 123
+    let appSign: String = "123"
     
     let selfUserID: String = String(format: "%d", Int.random(in: 0...99999))
     
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let userName: String = selfUserID
-        let config = ZegoUIKitPrebuiltCallInvitationConfig([ZegoUIKitSignalingPlugin()])
+        let config = ZegoUIKitPrebuiltCallInvitationConfig(notifyWhenAppRunningInBackgroundOrQuit: true, isSandboxEnvironment: false)
         ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(self.appID, appSign: self.appSign, userID: selfUserID, userName: userName, config: config)
         ZegoUIKitPrebuiltCallInvitationService.shared.delegate = self
     }
