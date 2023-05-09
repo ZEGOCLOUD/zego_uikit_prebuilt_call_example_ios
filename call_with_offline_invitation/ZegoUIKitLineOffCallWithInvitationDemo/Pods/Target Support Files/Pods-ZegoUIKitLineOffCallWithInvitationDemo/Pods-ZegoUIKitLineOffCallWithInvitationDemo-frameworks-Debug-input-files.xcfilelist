@@ -1,8 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitLineOffCallWithInvitationDemo/Pods-ZegoUIKitLineOffCallWithInvitationDemo-frameworks.sh
-${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework
-${BUILT_PRODUCTS_DIR}/ZegoUIKitPrebuiltCall/ZegoUIKitPrebuiltCall.framework
-${BUILT_PRODUCTS_DIR}/ZegoUIKitSignalingPlugin/ZegoUIKitSignalingPlugin.framework
-${PODS_XCFRAMEWORKS_BUILD_DIR}/ZIM/ZIM.framework/ZIM
-${PODS_XCFRAMEWORKS_BUILD_DIR}/ZPNs/ZPNs.framework/ZPNs
-${PODS_XCFRAMEWORKS_BUILD_DIR}/ZegoExpressEngine/Video/ZegoExpressEngine.framework/ZegoExpressEngine
-${PODS_XCFRAMEWORKS_BUILD_DIR}/ZegoUIKit/ZegoUIKitSDK.framework/ZegoUIKitSDK

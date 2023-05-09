@@ -14,7 +14,8 @@
 		863794E92952B21200299A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863794E82952B21200299A82 /* Assets.xcassets */; };
 		863794EC2952B21200299A82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863794EA2952B21200299A82 /* LaunchScreen.storyboard */; };
 		863795112952B87700299A82 /* zego_notification_incoming.caf in Resources */ = {isa = PBXBuildFile; fileRef = 863795102952B87700299A82 /* zego_notification_incoming.caf */; };
-		DF4F5887C87EA793013AEA38 /* Pods_ZegoUIKitLineOffCallWithInvitationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0064FB74911E813E3967AB56 /* Pods_ZegoUIKitLineOffCallWithInvitationDemo.framework */; };
+		86C6D83D2A09FAB7004C1FB8 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 86C6D83C2A09FAB7004C1FB8 /* Toast */; };
+		DF4F5887C87EA793013AEA38 /* Pods_ZegoUIKitOffLineCallWithInvitationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0064FB74911E813E3967AB56 /* Pods_ZegoUIKitOffLineCallWithInvitationDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,21 +24,21 @@
 			containerPortal = 863794D42952B21000299A82 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 863794DB2952B21000299A82;
-			remoteInfo = ZegoUIKitLineOffCallWithInvitationDemo;
+			remoteInfo = ZegoUIKitOffLineCallWithInvitationDemo;
 		};
 		863794FD2952B21200299A82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 863794D42952B21000299A82 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 863794DB2952B21000299A82;
-			remoteInfo = ZegoUIKitLineOffCallWithInvitationDemo;
+			remoteInfo = ZegoUIKitOffLineCallWithInvitationDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0064FB74911E813E3967AB56 /* Pods_ZegoUIKitLineOffCallWithInvitationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZegoUIKitLineOffCallWithInvitationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7262B3B50A99E4FAC7E60FE2 /* Pods-ZegoUIKitLineOffCallWithInvitationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitLineOffCallWithInvitationDemo.debug.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitLineOffCallWithInvitationDemo/Pods-ZegoUIKitLineOffCallWithInvitationDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		863794DC2952B21000299A82 /* ZegoUIKitLineOffCallWithInvitationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZegoUIKitLineOffCallWithInvitationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0064FB74911E813E3967AB56 /* Pods_ZegoUIKitOffLineCallWithInvitationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZegoUIKitOffLineCallWithInvitationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7262B3B50A99E4FAC7E60FE2 /* Pods-ZegoUIKitOffLineCallWithInvitationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitOffLineCallWithInvitationDemo.debug.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitOffLineCallWithInvitationDemo/Pods-ZegoUIKitOffLineCallWithInvitationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		863794DC2952B21000299A82 /* ZegoUIKitOffLineCallWithInvitationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZegoUIKitOffLineCallWithInvitationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		863794DF2952B21000299A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		863794E12952B21000299A82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		863794E32952B21000299A82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,11 +46,11 @@
 		863794E82952B21200299A82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		863794EB2952B21200299A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		863794ED2952B21200299A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		863794F22952B21200299A82 /* ZegoUIKitLineOffCallWithInvitationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZegoUIKitLineOffCallWithInvitationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		863794FC2952B21200299A82 /* ZegoUIKitLineOffCallWithInvitationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZegoUIKitLineOffCallWithInvitationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8637950F2952B7AB00299A82 /* ZegoUIKitLineOffCallWithInvitationDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZegoUIKitLineOffCallWithInvitationDemo.entitlements; sourceTree = "<group>"; };
+		863794F22952B21200299A82 /* ZegoUIKitOffLineCallWithInvitationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZegoUIKitOffLineCallWithInvitationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		863794FC2952B21200299A82 /* ZegoUIKitOffLineCallWithInvitationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZegoUIKitOffLineCallWithInvitationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8637950F2952B7AB00299A82 /* ZegoUIKitOffLineCallWithInvitationDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZegoUIKitOffLineCallWithInvitationDemo.entitlements; sourceTree = "<group>"; };
 		863795102952B87700299A82 /* zego_notification_incoming.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = zego_notification_incoming.caf; sourceTree = "<group>"; };
-		D8A34F7455E45FE0BD3B1D28 /* Pods-ZegoUIKitLineOffCallWithInvitationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitLineOffCallWithInvitationDemo.release.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitLineOffCallWithInvitationDemo/Pods-ZegoUIKitLineOffCallWithInvitationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D8A34F7455E45FE0BD3B1D28 /* Pods-ZegoUIKitOffLineCallWithInvitationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitOffLineCallWithInvitationDemo.release.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitOffLineCallWithInvitationDemo/Pods-ZegoUIKitOffLineCallWithInvitationDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF4F5887C87EA793013AEA38 /* Pods_ZegoUIKitLineOffCallWithInvitationDemo.framework in Frameworks */,
+				86C6D83D2A09FAB7004C1FB8 /* Toast in Frameworks */,
+				DF4F5887C87EA793013AEA38 /* Pods_ZegoUIKitOffLineCallWithInvitationDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +83,8 @@
 		5A29A8F11BEFBD9CC90EBC29 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7262B3B50A99E4FAC7E60FE2 /* Pods-ZegoUIKitLineOffCallWithInvitationDemo.debug.xcconfig */,
-				D8A34F7455E45FE0BD3B1D28 /* Pods-ZegoUIKitLineOffCallWithInvitationDemo.release.xcconfig */,
+				7262B3B50A99E4FAC7E60FE2 /* Pods-ZegoUIKitOffLineCallWithInvitationDemo.debug.xcconfig */,
+				D8A34F7455E45FE0BD3B1D28 /* Pods-ZegoUIKitOffLineCallWithInvitationDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -90,7 +92,7 @@
 		863794D32952B21000299A82 = {
 			isa = PBXGroup;
 			children = (
-				863794DE2952B21000299A82 /* ZegoUIKitLineOffCallWithInvitationDemo */,
+				863794DE2952B21000299A82 /* ZegoUIKitOffLineCallWithInvitationDemo */,
 				863794DD2952B21000299A82 /* Products */,
 				5A29A8F11BEFBD9CC90EBC29 /* Pods */,
 				BFC8A9457613697E190C827B /* Frameworks */,
@@ -100,18 +102,18 @@
 		863794DD2952B21000299A82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				863794DC2952B21000299A82 /* ZegoUIKitLineOffCallWithInvitationDemo.app */,
-				863794F22952B21200299A82 /* ZegoUIKitLineOffCallWithInvitationDemoTests.xctest */,
-				863794FC2952B21200299A82 /* ZegoUIKitLineOffCallWithInvitationDemoUITests.xctest */,
+				863794DC2952B21000299A82 /* ZegoUIKitOffLineCallWithInvitationDemo.app */,
+				863794F22952B21200299A82 /* ZegoUIKitOffLineCallWithInvitationDemoTests.xctest */,
+				863794FC2952B21200299A82 /* ZegoUIKitOffLineCallWithInvitationDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		863794DE2952B21000299A82 /* ZegoUIKitLineOffCallWithInvitationDemo */ = {
+		863794DE2952B21000299A82 /* ZegoUIKitOffLineCallWithInvitationDemo */ = {
 			isa = PBXGroup;
 			children = (
 				863795102952B87700299A82 /* zego_notification_incoming.caf */,
-				8637950F2952B7AB00299A82 /* ZegoUIKitLineOffCallWithInvitationDemo.entitlements */,
+				8637950F2952B7AB00299A82 /* ZegoUIKitOffLineCallWithInvitationDemo.entitlements */,
 				863794DF2952B21000299A82 /* AppDelegate.swift */,
 				863794E12952B21000299A82 /* SceneDelegate.swift */,
 				863794E32952B21000299A82 /* ViewController.swift */,
@@ -120,13 +122,13 @@
 				863794EA2952B21200299A82 /* LaunchScreen.storyboard */,
 				863794ED2952B21200299A82 /* Info.plist */,
 			);
-			path = ZegoUIKitLineOffCallWithInvitationDemo;
+			path = ZegoUIKitOffLineCallWithInvitationDemo;
 			sourceTree = "<group>";
 		};
 		BFC8A9457613697E190C827B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0064FB74911E813E3967AB56 /* Pods_ZegoUIKitLineOffCallWithInvitationDemo.framework */,
+				0064FB74911E813E3967AB56 /* Pods_ZegoUIKitOffLineCallWithInvitationDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,27 +136,31 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		863794DB2952B21000299A82 /* ZegoUIKitLineOffCallWithInvitationDemo */ = {
+		863794DB2952B21000299A82 /* ZegoUIKitOffLineCallWithInvitationDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 863795062952B21200299A82 /* Build configuration list for PBXNativeTarget "ZegoUIKitLineOffCallWithInvitationDemo" */;
+			buildConfigurationList = 863795062952B21200299A82 /* Build configuration list for PBXNativeTarget "ZegoUIKitOffLineCallWithInvitationDemo" */;
 			buildPhases = (
 				7861888DFFC3175BEABFD03C /* [CP] Check Pods Manifest.lock */,
 				863794D82952B21000299A82 /* Sources */,
 				863794D92952B21000299A82 /* Frameworks */,
 				863794DA2952B21000299A82 /* Resources */,
+				721B0F70A5EEF5C649508F41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ZegoUIKitLineOffCallWithInvitationDemo;
-			productName = ZegoUIKitLineOffCallWithInvitationDemo;
-			productReference = 863794DC2952B21000299A82 /* ZegoUIKitLineOffCallWithInvitationDemo.app */;
+			name = ZegoUIKitOffLineCallWithInvitationDemo;
+			packageProductDependencies = (
+				86C6D83C2A09FAB7004C1FB8 /* Toast */,
+			);
+			productName = ZegoUIKitOffLineCallWithInvitationDemo;
+			productReference = 863794DC2952B21000299A82 /* ZegoUIKitOffLineCallWithInvitationDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		863794F12952B21200299A82 /* ZegoUIKitLineOffCallWithInvitationDemoTests */ = {
+		863794F12952B21200299A82 /* ZegoUIKitOffLineCallWithInvitationDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 863795092952B21200299A82 /* Build configuration list for PBXNativeTarget "ZegoUIKitLineOffCallWithInvitationDemoTests" */;
+			buildConfigurationList = 863795092952B21200299A82 /* Build configuration list for PBXNativeTarget "ZegoUIKitOffLineCallWithInvitationDemoTests" */;
 			buildPhases = (
 				863794EE2952B21200299A82 /* Sources */,
 				863794EF2952B21200299A82 /* Frameworks */,
@@ -165,14 +171,14 @@
 			dependencies = (
 				863794F42952B21200299A82 /* PBXTargetDependency */,
 			);
-			name = ZegoUIKitLineOffCallWithInvitationDemoTests;
-			productName = ZegoUIKitLineOffCallWithInvitationDemoTests;
-			productReference = 863794F22952B21200299A82 /* ZegoUIKitLineOffCallWithInvitationDemoTests.xctest */;
+			name = ZegoUIKitOffLineCallWithInvitationDemoTests;
+			productName = ZegoUIKitOffLineCallWithInvitationDemoTests;
+			productReference = 863794F22952B21200299A82 /* ZegoUIKitOffLineCallWithInvitationDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		863794FB2952B21200299A82 /* ZegoUIKitLineOffCallWithInvitationDemoUITests */ = {
+		863794FB2952B21200299A82 /* ZegoUIKitOffLineCallWithInvitationDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8637950C2952B21200299A82 /* Build configuration list for PBXNativeTarget "ZegoUIKitLineOffCallWithInvitationDemoUITests" */;
+			buildConfigurationList = 8637950C2952B21200299A82 /* Build configuration list for PBXNativeTarget "ZegoUIKitOffLineCallWithInvitationDemoUITests" */;
 			buildPhases = (
 				863794F82952B21200299A82 /* Sources */,
 				863794F92952B21200299A82 /* Frameworks */,
@@ -183,9 +189,9 @@
 			dependencies = (
 				863794FE2952B21200299A82 /* PBXTargetDependency */,
 			);
-			name = ZegoUIKitLineOffCallWithInvitationDemoUITests;
-			productName = ZegoUIKitLineOffCallWithInvitationDemoUITests;
-			productReference = 863794FC2952B21200299A82 /* ZegoUIKitLineOffCallWithInvitationDemoUITests.xctest */;
+			name = ZegoUIKitOffLineCallWithInvitationDemoUITests;
+			productName = ZegoUIKitOffLineCallWithInvitationDemoUITests;
+			productReference = 863794FC2952B21200299A82 /* ZegoUIKitOffLineCallWithInvitationDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 863794D72952B21000299A82 /* Build configuration list for PBXProject "ZegoUIKitLineOffCallWithInvitationDemo" */;
+			buildConfigurationList = 863794D72952B21000299A82 /* Build configuration list for PBXProject "ZegoUIKitOffLineCallWithInvitationDemo" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,13 +226,16 @@
 				Base,
 			);
 			mainGroup = 863794D32952B21000299A82;
+			packageReferences = (
+				86C6D83B2A09FAB6004C1FB8 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 863794DD2952B21000299A82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				863794DB2952B21000299A82 /* ZegoUIKitLineOffCallWithInvitationDemo */,
-				863794F12952B21200299A82 /* ZegoUIKitLineOffCallWithInvitationDemoTests */,
-				863794FB2952B21200299A82 /* ZegoUIKitLineOffCallWithInvitationDemoUITests */,
+				863794DB2952B21000299A82 /* ZegoUIKitOffLineCallWithInvitationDemo */,
+				863794F12952B21200299A82 /* ZegoUIKitOffLineCallWithInvitationDemoTests */,
+				863794FB2952B21200299A82 /* ZegoUIKitOffLineCallWithInvitationDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +269,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		721B0F70A5EEF5C649508F41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitOffLineCallWithInvitationDemo/Pods-ZegoUIKitOffLineCallWithInvitationDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitOffLineCallWithInvitationDemo/Pods-ZegoUIKitOffLineCallWithInvitationDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitOffLineCallWithInvitationDemo/Pods-ZegoUIKitOffLineCallWithInvitationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7861888DFFC3175BEABFD03C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,7 +301,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZegoUIKitLineOffCallWithInvitationDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ZegoUIKitOffLineCallWithInvitationDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -314,12 +340,12 @@
 /* Begin PBXTargetDependency section */
 		863794F42952B21200299A82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 863794DB2952B21000299A82 /* ZegoUIKitLineOffCallWithInvitationDemo */;
+			target = 863794DB2952B21000299A82 /* ZegoUIKitOffLineCallWithInvitationDemo */;
 			targetProxy = 863794F32952B21200299A82 /* PBXContainerItemProxy */;
 		};
 		863794FE2952B21200299A82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 863794DB2952B21000299A82 /* ZegoUIKitLineOffCallWithInvitationDemo */;
+			target = 863794DB2952B21000299A82 /* ZegoUIKitOffLineCallWithInvitationDemo */;
 			targetProxy = 863794FD2952B21200299A82 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -460,16 +486,16 @@
 		};
 		863795072952B21200299A82 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7262B3B50A99E4FAC7E60FE2 /* Pods-ZegoUIKitLineOffCallWithInvitationDemo.debug.xcconfig */;
+			baseConfigurationReference = 7262B3B50A99E4FAC7E60FE2 /* Pods-ZegoUIKitOffLineCallWithInvitationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ZegoUIKitLineOffCallWithInvitationDemo/ZegoUIKitLineOffCallWithInvitationDemo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ZegoUIKitOffLineCallWithInvitationDemo/ZegoUIKitOffLineCallWithInvitationDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PN83KX5U85;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ZegoUIKitLineOffCallWithInvitationDemo/Info.plist;
+				INFOPLIST_FILE = ZegoUIKitOffLineCallWithInvitationDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to help you join the call.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need to use your mic to help you join the call.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -492,16 +518,16 @@
 		};
 		863795082952B21200299A82 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8A34F7455E45FE0BD3B1D28 /* Pods-ZegoUIKitLineOffCallWithInvitationDemo.release.xcconfig */;
+			baseConfigurationReference = D8A34F7455E45FE0BD3B1D28 /* Pods-ZegoUIKitOffLineCallWithInvitationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ZegoUIKitLineOffCallWithInvitationDemo/ZegoUIKitLineOffCallWithInvitationDemo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ZegoUIKitOffLineCallWithInvitationDemo/ZegoUIKitOffLineCallWithInvitationDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PN83KX5U85;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ZegoUIKitLineOffCallWithInvitationDemo/Info.plist;
+				INFOPLIST_FILE = ZegoUIKitOffLineCallWithInvitationDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to help you join the call.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need to use your mic to help you join the call.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -533,12 +559,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = im.zego.ZegoUIKitLineOffCallWithInvitationDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = im.zego.ZegoUIKitOffLineCallWithInvitationDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZegoUIKitLineOffCallWithInvitationDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZegoUIKitLineOffCallWithInvitationDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZegoUIKitOffLineCallWithInvitationDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZegoUIKitOffLineCallWithInvitationDemo";
 			};
 			name = Debug;
 		};
@@ -553,12 +579,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = im.zego.ZegoUIKitLineOffCallWithInvitationDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = im.zego.ZegoUIKitOffLineCallWithInvitationDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZegoUIKitLineOffCallWithInvitationDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZegoUIKitLineOffCallWithInvitationDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZegoUIKitOffLineCallWithInvitationDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZegoUIKitOffLineCallWithInvitationDemo";
 			};
 			name = Release;
 		};
@@ -571,12 +597,12 @@
 				DEVELOPMENT_TEAM = B82BHJ5H89;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = im.zego.ZegoUIKitLineOffCallWithInvitationDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = im.zego.ZegoUIKitOffLineCallWithInvitationDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ZegoUIKitLineOffCallWithInvitationDemo;
+				TEST_TARGET_NAME = ZegoUIKitOffLineCallWithInvitationDemo;
 			};
 			name = Debug;
 		};
@@ -589,19 +615,19 @@
 				DEVELOPMENT_TEAM = B82BHJ5H89;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = im.zego.ZegoUIKitLineOffCallWithInvitationDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = im.zego.ZegoUIKitOffLineCallWithInvitationDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ZegoUIKitLineOffCallWithInvitationDemo;
+				TEST_TARGET_NAME = ZegoUIKitOffLineCallWithInvitationDemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		863794D72952B21000299A82 /* Build configuration list for PBXProject "ZegoUIKitLineOffCallWithInvitationDemo" */ = {
+		863794D72952B21000299A82 /* Build configuration list for PBXProject "ZegoUIKitOffLineCallWithInvitationDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				863795042952B21200299A82 /* Debug */,
@@ -610,7 +636,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		863795062952B21200299A82 /* Build configuration list for PBXNativeTarget "ZegoUIKitLineOffCallWithInvitationDemo" */ = {
+		863795062952B21200299A82 /* Build configuration list for PBXNativeTarget "ZegoUIKitOffLineCallWithInvitationDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				863795072952B21200299A82 /* Debug */,
@@ -619,7 +645,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		863795092952B21200299A82 /* Build configuration list for PBXNativeTarget "ZegoUIKitLineOffCallWithInvitationDemoTests" */ = {
+		863795092952B21200299A82 /* Build configuration list for PBXNativeTarget "ZegoUIKitOffLineCallWithInvitationDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8637950A2952B21200299A82 /* Debug */,
@@ -628,7 +654,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8637950C2952B21200299A82 /* Build configuration list for PBXNativeTarget "ZegoUIKitLineOffCallWithInvitationDemoUITests" */ = {
+		8637950C2952B21200299A82 /* Build configuration list for PBXNativeTarget "ZegoUIKitOffLineCallWithInvitationDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8637950D2952B21200299A82 /* Debug */,
@@ -638,6 +664,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86C6D83B2A09FAB6004C1FB8 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86C6D83C2A09FAB7004C1FB8 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86C6D83B2A09FAB6004C1FB8 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 863794D42952B21000299A82 /* Project object */;
 }
