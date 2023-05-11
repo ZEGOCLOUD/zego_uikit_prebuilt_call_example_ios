@@ -6,7 +6,6 @@ target 'ZegoUIKitCallWithInvitationDemo' do
   use_frameworks!
 
   # Pods for ZegoUIKitCallWithInvitationDemo
-  pod 'Toast-Swift'
   pod 'ZegoUIKitPrebuiltCall'
   pod 'ZegoUIKitSignalingPlugin'
 
