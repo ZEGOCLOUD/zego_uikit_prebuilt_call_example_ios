@@ -7,14 +7,14 @@
 
 import UIKit
 import ZegoUIKitPrebuiltCall
-import ZegoUIKitSDK
+import ZegoUIKit
 
 class ViewController: UIViewController {
     
     let selfUserID: String = String(format: "%d", Int.random(in: 0...99999))
     var selfUserName: String?
-    let yourAppID: UInt32 = 123
-    let yourAppSign: String = "123"
+    let yourAppID: UInt32 = <#YourAppID#>
+    let yourAppSign: String = <#YourAppSign#>
     
     @IBOutlet weak var userIDLabel: UILabel! {
         didSet {

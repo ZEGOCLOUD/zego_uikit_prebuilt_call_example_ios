@@ -13,7 +13,6 @@
 		86BDBAFC2900F3470039563D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BDBAFA2900F3470039563D /* Main.storyboard */; };
 		86BDBAFE2900F3480039563D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86BDBAFD2900F3480039563D /* Assets.xcassets */; };
 		86BDBB012900F3480039563D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BDBAFF2900F3480039563D /* LaunchScreen.storyboard */; };
-		86C6D8582A0CEB2B004C1FB8 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 86C6D8572A0CEB2B004C1FB8 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86C6D8582A0CEB2B004C1FB8 /* Toast in Frameworks */,
 				08BFB08F21F8F560F7D56589 /* Pods_ZegoUIKitCallWithInvitationDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,7 +109,6 @@
 			);
 			name = ZegoUIKitCallWithInvitationDemo;
 			packageProductDependencies = (
-				86C6D8572A0CEB2B004C1FB8 /* Toast */,
 			);
 			productName = ZegoUIKitCallWithInvitationDemo;
 			productReference = 86BDBAF12900F3470039563D /* ZegoUIKitCallWithInvitationDemo.app */;
@@ -142,7 +139,6 @@
 			);
 			mainGroup = 86BDBAE82900F3470039563D;
 			packageReferences = (
-				86C6D8562A0CEB2B004C1FB8 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = 86BDBAF22900F3470039563D /* Products */;
 			projectDirPath = "";
@@ -396,8 +392,6 @@
 					"-framework",
 					"\"ZegoUIKitPrebuiltCall\"",
 					"-framework",
-					"\"ZegoUIKitSDK\"",
-					"-framework",
 					"\"ZegoUIKitSignalingPlugin\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zegocloud.uikit.callwithinvitation.ZegoUIKitCallWithInvitationDemo;
@@ -448,8 +442,6 @@
 					"-framework",
 					"\"ZegoUIKitPrebuiltCall\"",
 					"-framework",
-					"\"ZegoUIKitSDK\"",
-					"-framework",
 					"\"ZegoUIKitSignalingPlugin\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zegocloud.uikit.callwithinvitation.ZegoUIKitCallWithInvitationDemo;
@@ -482,25 +474,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		86C6D8562A0CEB2B004C1FB8 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		86C6D8572A0CEB2B004C1FB8 /* Toast */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 86C6D8562A0CEB2B004C1FB8 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
-			productName = Toast;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86BDBAE92900F3470039563D /* Project object */;
 }

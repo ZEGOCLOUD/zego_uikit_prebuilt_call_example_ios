@@ -7,7 +7,7 @@
 
 import UIKit
 import ZegoUIKitPrebuiltCall
-import ZegoUIKitSDK
+import ZegoUIKit
 
 class ViewController: UIViewController {
     

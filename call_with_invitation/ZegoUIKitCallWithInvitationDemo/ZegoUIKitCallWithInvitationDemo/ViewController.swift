@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import ZegoUIKitSDK
-import Toast
+import ZegoUIKit
+import Toast_Swift
 import ZegoUIKitSignalingPlugin
 import ZegoUIKitPrebuiltCall
 

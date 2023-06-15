@@ -14,7 +14,6 @@
 		863794E92952B21200299A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863794E82952B21200299A82 /* Assets.xcassets */; };
 		863794EC2952B21200299A82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863794EA2952B21200299A82 /* LaunchScreen.storyboard */; };
 		863795112952B87700299A82 /* zego_notification_incoming.caf in Resources */ = {isa = PBXBuildFile; fileRef = 863795102952B87700299A82 /* zego_notification_incoming.caf */; };
-		86C6D83D2A09FAB7004C1FB8 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 86C6D83C2A09FAB7004C1FB8 /* Toast */; };
 		DF4F5887C87EA793013AEA38 /* Pods_ZegoUIKitOffLineCallWithInvitationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0064FB74911E813E3967AB56 /* Pods_ZegoUIKitOffLineCallWithInvitationDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86C6D83D2A09FAB7004C1FB8 /* Toast in Frameworks */,
 				DF4F5887C87EA793013AEA38 /* Pods_ZegoUIKitOffLineCallWithInvitationDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,7 +150,6 @@
 			);
 			name = ZegoUIKitOffLineCallWithInvitationDemo;
 			packageProductDependencies = (
-				86C6D83C2A09FAB7004C1FB8 /* Toast */,
 			);
 			productName = ZegoUIKitOffLineCallWithInvitationDemo;
 			productReference = 863794DC2952B21000299A82 /* ZegoUIKitOffLineCallWithInvitationDemo.app */;
@@ -227,7 +224,6 @@
 			);
 			mainGroup = 863794D32952B21000299A82;
 			packageReferences = (
-				86C6D83B2A09FAB6004C1FB8 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = 863794DD2952B21000299A82 /* Products */;
 			projectDirPath = "";
@@ -664,25 +660,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		86C6D83B2A09FAB6004C1FB8 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		86C6D83C2A09FAB7004C1FB8 /* Toast */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 86C6D83B2A09FAB6004C1FB8 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
-			productName = Toast;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 863794D42952B21000299A82 /* Project object */;
 }
