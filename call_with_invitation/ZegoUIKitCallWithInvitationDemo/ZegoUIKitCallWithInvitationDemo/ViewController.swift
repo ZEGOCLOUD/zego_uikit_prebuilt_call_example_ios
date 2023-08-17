@@ -50,6 +50,8 @@ class ViewController: UIViewController {
     
     let voiceCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.voiceCall.rawValue)
     let videoCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.videoCall.rawValue)
+    
+    let callDuration: CallDuration = CallDuration()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +60,8 @@ class ViewController: UIViewController {
         let config = ZegoUIKitPrebuiltCallInvitationConfig(notifyWhenAppRunningInBackgroundOrQuit: true, isSandboxEnvironment: false)
         ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(self.appID, appSign: self.appSign, userID: selfUserID, userName: userName, config: config)
         ZegoUIKitPrebuiltCallInvitationService.shared.delegate = self
+        callDuration.delegate = self
+        ZegoUIKit.shared.addEventHandler(self)
     }
     
     @objc func textDidChange(_ textField: UITextField) {
@@ -82,7 +86,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UITextFieldDelegate, ZegoSendCallInvitationButtonDelegate {
+extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UITextFieldDelegate, ZegoSendCallInvitationButtonDelegate, CallDurationDelegate, ZegoUIKitEventHandle {
     //MARK: -ZegoUIKitPrebuiltCallInvitationServiceDelegate
     func requireConfig(_ data: ZegoCallInvitationData) -> ZegoUIKitPrebuiltCallConfig {
         if data.type == .voiceCall {
@@ -147,6 +151,20 @@ extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UIText
         }
        let vc = window?.rootViewController
        return vc
+    }
+    
+    func onRoomStateChanged(_ reason: ZegoUIKitRoomStateChangedReason, errorCode: Int32, extendedData: [AnyHashable : Any], roomID: String) {
+        if reason == .logined {
+            // call is start
+            callDuration.startTheTimer()
+        } else if reason == .logout {
+            // call is end
+            callDuration.stopTheTimer()
+        }
+    }
+    
+    func onTimeUpdate(_ duration: Int) {
+        print("timer:\(duration)")
     }
 }
 

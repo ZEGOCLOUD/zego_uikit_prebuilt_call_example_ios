@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		08BFB08F21F8F560F7D56589 /* Pods_ZegoUIKitCallWithInvitationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24376A5ECF6C2670243DE16 /* Pods_ZegoUIKitCallWithInvitationDemo.framework */; };
+		86117B9A2A8DC9E100653A88 /* CallDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86117B992A8DC9E100653A88 /* CallDuration.swift */; };
 		86BDBAF52900F3470039563D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDBAF42900F3470039563D /* AppDelegate.swift */; };
 		86BDBAF92900F3470039563D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDBAF82900F3470039563D /* ViewController.swift */; };
 		86BDBAFC2900F3470039563D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BDBAFA2900F3470039563D /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		0229AF401BA70717750C99C2 /* Pods-ZegoUIKitCallWithInvitationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitCallWithInvitationDemo.release.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitCallWithInvitationDemo/Pods-ZegoUIKitCallWithInvitationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		86117B992A8DC9E100653A88 /* CallDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallDuration.swift; sourceTree = "<group>"; };
 		86BDBAF12900F3470039563D /* ZegoUIKitCallWithInvitationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZegoUIKitCallWithInvitationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BDBAF42900F3470039563D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86BDBAF82900F3470039563D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				86BDBAF42900F3470039563D /* AppDelegate.swift */,
 				86BDBAF82900F3470039563D /* ViewController.swift */,
+				86117B992A8DC9E100653A88 /* CallDuration.swift */,
 				86BDBAFA2900F3470039563D /* Main.storyboard */,
 				86BDBAFD2900F3480039563D /* Assets.xcassets */,
 				86BDBAFF2900F3480039563D /* LaunchScreen.storyboard */,
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86BDBAF92900F3470039563D /* ViewController.swift in Sources */,
+				86117B9A2A8DC9E100653A88 /* CallDuration.swift in Sources */,
 				86BDBAF52900F3470039563D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
