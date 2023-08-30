@@ -52,6 +52,14 @@ class ViewController: UIViewController {
     let videoCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.videoCall.rawValue)
     
     let callDuration: CallDuration = CallDuration()
+    
+    lazy var timeLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.textColor = UIColor.white
+        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        return label;
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -156,15 +164,24 @@ extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UIText
     func onRoomStateChanged(_ reason: ZegoUIKitRoomStateChangedReason, errorCode: Int32, extendedData: [AnyHashable : Any], roomID: String) {
         if reason == .logined {
             // call is start
+            addTimeLabelToCallVC()
             callDuration.startTheTimer()
         } else if reason == .logout {
             // call is end
+            timeLabel.text = ""
             callDuration.stopTheTimer()
         }
     }
     
-    func onTimeUpdate(_ duration: Int) {
-        print("timer:\(duration)")
+    func onTimeUpdate(_ duration: Int, formattedString: String) {
+        timeLabel.text = formattedString
+    }
+    
+    // add call duration UI
+    func addTimeLabelToCallVC() {
+        guard let callVC = ZegoUIKitPrebuiltCallInvitationService.shared.getPrebuiltCallVC() else { return }
+        timeLabel.frame = CGRect(x: (callVC.view.frame.size.width - 150) / 2, y: 60, width: 150, height: 30)
+        callVC.view.addSubview(timeLabel)
     }
 }
 
