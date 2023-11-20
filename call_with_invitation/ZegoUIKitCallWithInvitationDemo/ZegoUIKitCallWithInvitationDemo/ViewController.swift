@@ -51,15 +51,6 @@ class ViewController: UIViewController {
     let voiceCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.voiceCall.rawValue)
     let videoCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.videoCall.rawValue)
     
-    let callDuration: CallDuration = CallDuration()
-    
-    lazy var timeLabel: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-        label.textColor = UIColor.white
-        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-        return label;
-    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,7 +59,6 @@ class ViewController: UIViewController {
         let config = ZegoUIKitPrebuiltCallInvitationConfig(notifyWhenAppRunningInBackgroundOrQuit: true, isSandboxEnvironment: false)
         ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(self.appID, appSign: self.appSign, userID: selfUserID, userName: userName, config: config)
         ZegoUIKitPrebuiltCallInvitationService.shared.delegate = self
-        callDuration.delegate = self
         ZegoUIKit.shared.addEventHandler(self)
     }
     
@@ -94,7 +84,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UITextFieldDelegate, ZegoSendCallInvitationButtonDelegate, CallDurationDelegate, ZegoUIKitEventHandle {
+extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UITextFieldDelegate, ZegoSendCallInvitationButtonDelegate, ZegoUIKitEventHandle {
     //MARK: -ZegoUIKitPrebuiltCallInvitationServiceDelegate
     func requireConfig(_ data: ZegoCallInvitationData) -> ZegoUIKitPrebuiltCallConfig {
         if data.type == .voiceCall {
@@ -159,29 +149,6 @@ extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UIText
         }
        let vc = window?.rootViewController
        return vc
-    }
-    
-    func onRoomStateChanged(_ reason: ZegoUIKitRoomStateChangedReason, errorCode: Int32, extendedData: [AnyHashable : Any], roomID: String) {
-        if reason == .logined {
-            // call is start
-            addTimeLabelToCallVC()
-            callDuration.startTheTimer()
-        } else if reason == .logout {
-            // call is end
-            timeLabel.text = ""
-            callDuration.stopTheTimer()
-        }
-    }
-    
-    func onTimeUpdate(_ duration: Int, formattedString: String) {
-        timeLabel.text = formattedString
-    }
-    
-    // add call duration UI
-    func addTimeLabelToCallVC() {
-        guard let callVC = ZegoUIKitPrebuiltCallInvitationService.shared.getPrebuiltCallVC() else { return }
-        timeLabel.frame = CGRect(x: (callVC.view.frame.size.width - 150) / 2, y: 60, width: 150, height: 30)
-        callVC.view.addSubview(timeLabel)
     }
 }
 
