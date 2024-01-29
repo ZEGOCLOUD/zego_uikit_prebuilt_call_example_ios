@@ -50,14 +50,14 @@ class ViewController: UIViewController {
     let voiceCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.voiceCall.rawValue)
     let videoCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.videoCall.rawValue)
     
-    var config: ZegoUIKitPrebuiltCallInvitationConfig = ZegoUIKitPrebuiltCallInvitationConfig(notifyWhenAppRunningInBackgroundOrQuit: true, isSandboxEnvironment: false)
+    var config: ZegoUIKitPrebuiltCallInvitationConfig = ZegoUIKitPrebuiltCallInvitationConfig(notifyWhenAppRunningInBackgroundOrQuit: true, isSandboxEnvironment: true)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //resourceID can be used to specify the ringtone of an offline call invitation, which must be set to the same value as the Push Resource ID in ZEGOCLOUD Admin Console. This only takes effect when the notifyWhenAppRunningInBackgroundOrQuit is true.
-        voiceCallButton.resourceID = "zegouikit_call"
-        videoCallButton.resourceID = "zegouikit_call"
+        voiceCallButton.resourceID = "zego_data"
+        videoCallButton.resourceID = "zego_data"
         let userName: String = selfUserID
         ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(self.appID, appSign: self.appSign, userID: selfUserID, userName: userName, config: config)
         ZegoUIKitPrebuiltCallInvitationService.shared.delegate = self
