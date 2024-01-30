@@ -5,8 +5,8 @@ target 'ZegoUIKitOffLineCallWithInvitationDemo' do
   use_frameworks!
 
   pod 'Toast-Swift'
-  pod 'ZegoUIKitPrebuiltCall'
-  pod 'ZegoUIKitSignalingPlugin'
+  pod 'ZegoUIKitPrebuiltCall', '>=2.7.0'
+  pod 'ZegoUIKitSignalingPlugin', '>=2.4.0'
   
   post_install do |installer|
       installer.generated_projects.each do |project|
