@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11ED0909C62BC3F8F99C4B09 /* Pods_ZegoUIKitCallWithInvitationDemoOC_ZegoUIKitCallWithInvitationDemoOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A751A3B56C61A10E849C1 /* Pods_ZegoUIKitCallWithInvitationDemoOC_ZegoUIKitCallWithInvitationDemoOCUITests.framework */; };
+		2C1D9B1697E0E29FF2F3F1A1 /* Pods_ZegoUIKitCallWithInvitationDemoOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C011D379428542DD00C83301 /* Pods_ZegoUIKitCallWithInvitationDemoOC.framework */; };
+		66FC583BA33956E62DF75E5F /* Pods_ZegoUIKitCallWithInvitationDemoOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B01DC6AB91937F618B38F6 /* Pods_ZegoUIKitCallWithInvitationDemoOCTests.framework */; };
+		86811E4F2C047EB500E0844D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86811E4E2C047EB500E0844D /* AppDelegate.m */; };
+		86811E522C047EB500E0844D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86811E512C047EB500E0844D /* SceneDelegate.m */; };
+		86811E552C047EB500E0844D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86811E542C047EB500E0844D /* ViewController.m */; };
+		86811E582C047EB500E0844D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 86811E572C047EB500E0844D /* Base */; };
+		86811E5A2C047EB800E0844D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86811E592C047EB800E0844D /* Assets.xcassets */; };
+		86811E5D2C047EB800E0844D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 86811E5C2C047EB800E0844D /* Base */; };
+		86811E602C047EB800E0844D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86811E5F2C047EB800E0844D /* main.m */; };
+		86811E6A2C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86811E692C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCTests.m */; };
+		86811E742C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86811E732C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITests.m */; };
+		86811E762C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86811E752C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITestsLaunchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86811E662C047EB800E0844D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86811E422C047EB500E0844D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86811E492C047EB500E0844D;
+			remoteInfo = ZegoUIKitCallWithInvitationDemoOC;
+		};
+		86811E702C047EB800E0844D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86811E422C047EB500E0844D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86811E492C047EB500E0844D;
+			remoteInfo = ZegoUIKitCallWithInvitationDemoOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16E45A214FCCDA29B93AA7F8 /* Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests/Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		26F4AAD26158E59552BCDF2B /* Pods-ZegoUIKitCallWithInvitationDemoOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitCallWithInvitationDemoOC.debug.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitCallWithInvitationDemoOC/Pods-ZegoUIKitCallWithInvitationDemoOC.debug.xcconfig"; sourceTree = "<group>"; };
+		86811E4A2C047EB500E0844D /* ZegoUIKitCallWithInvitationDemoOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZegoUIKitCallWithInvitationDemoOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86811E4D2C047EB500E0844D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		86811E4E2C047EB500E0844D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		86811E502C047EB500E0844D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		86811E512C047EB500E0844D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		86811E532C047EB500E0844D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		86811E542C047EB500E0844D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		86811E572C047EB500E0844D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86811E592C047EB800E0844D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86811E5C2C047EB800E0844D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86811E5E2C047EB800E0844D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86811E5F2C047EB800E0844D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86811E652C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZegoUIKitCallWithInvitationDemoOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86811E692C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoUIKitCallWithInvitationDemoOCTests.m; sourceTree = "<group>"; };
+		86811E6F2C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZegoUIKitCallWithInvitationDemoOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86811E732C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoUIKitCallWithInvitationDemoOCUITests.m; sourceTree = "<group>"; };
+		86811E752C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoUIKitCallWithInvitationDemoOCUITestsLaunchTests.m; sourceTree = "<group>"; };
+		92D5426F9A560EB073F9D418 /* Pods-ZegoUIKitCallWithInvitationDemoOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitCallWithInvitationDemoOCTests.release.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitCallWithInvitationDemoOCTests/Pods-ZegoUIKitCallWithInvitationDemoOCTests.release.xcconfig"; sourceTree = "<group>"; };
+		981959DA943FB53428E78935 /* Pods-ZegoUIKitCallWithInvitationDemoOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitCallWithInvitationDemoOCTests.debug.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitCallWithInvitationDemoOCTests/Pods-ZegoUIKitCallWithInvitationDemoOCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B11BA713C12A23F969E1B70B /* Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests.release.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests/Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE6C36826B1A05CB4266E272 /* Pods-ZegoUIKitCallWithInvitationDemoOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoUIKitCallWithInvitationDemoOC.release.xcconfig"; path = "Target Support Files/Pods-ZegoUIKitCallWithInvitationDemoOC/Pods-ZegoUIKitCallWithInvitationDemoOC.release.xcconfig"; sourceTree = "<group>"; };
+		C011D379428542DD00C83301 /* Pods_ZegoUIKitCallWithInvitationDemoOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZegoUIKitCallWithInvitationDemoOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B01DC6AB91937F618B38F6 /* Pods_ZegoUIKitCallWithInvitationDemoOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZegoUIKitCallWithInvitationDemoOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39A751A3B56C61A10E849C1 /* Pods_ZegoUIKitCallWithInvitationDemoOC_ZegoUIKitCallWithInvitationDemoOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZegoUIKitCallWithInvitationDemoOC_ZegoUIKitCallWithInvitationDemoOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86811E472C047EB500E0844D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1D9B1697E0E29FF2F3F1A1 /* Pods_ZegoUIKitCallWithInvitationDemoOC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86811E622C047EB800E0844D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66FC583BA33956E62DF75E5F /* Pods_ZegoUIKitCallWithInvitationDemoOCTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86811E6C2C047EB800E0844D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11ED0909C62BC3F8F99C4B09 /* Pods_ZegoUIKitCallWithInvitationDemoOC_ZegoUIKitCallWithInvitationDemoOCUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35B3EEE2604ADE9CC875C6DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C011D379428542DD00C83301 /* Pods_ZegoUIKitCallWithInvitationDemoOC.framework */,
+				E39A751A3B56C61A10E849C1 /* Pods_ZegoUIKitCallWithInvitationDemoOC_ZegoUIKitCallWithInvitationDemoOCUITests.framework */,
+				E0B01DC6AB91937F618B38F6 /* Pods_ZegoUIKitCallWithInvitationDemoOCTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49CBDC91BF2122FB38C154E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26F4AAD26158E59552BCDF2B /* Pods-ZegoUIKitCallWithInvitationDemoOC.debug.xcconfig */,
+				BE6C36826B1A05CB4266E272 /* Pods-ZegoUIKitCallWithInvitationDemoOC.release.xcconfig */,
+				16E45A214FCCDA29B93AA7F8 /* Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests.debug.xcconfig */,
+				B11BA713C12A23F969E1B70B /* Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests.release.xcconfig */,
+				981959DA943FB53428E78935 /* Pods-ZegoUIKitCallWithInvitationDemoOCTests.debug.xcconfig */,
+				92D5426F9A560EB073F9D418 /* Pods-ZegoUIKitCallWithInvitationDemoOCTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		86811E412C047EB500E0844D = {
+			isa = PBXGroup;
+			children = (
+				86811E4C2C047EB500E0844D /* ZegoUIKitCallWithInvitationDemoOC */,
+				86811E682C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCTests */,
+				86811E722C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITests */,
+				86811E4B2C047EB500E0844D /* Products */,
+				49CBDC91BF2122FB38C154E7 /* Pods */,
+				35B3EEE2604ADE9CC875C6DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		86811E4B2C047EB500E0844D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86811E4A2C047EB500E0844D /* ZegoUIKitCallWithInvitationDemoOC.app */,
+				86811E652C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCTests.xctest */,
+				86811E6F2C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86811E4C2C047EB500E0844D /* ZegoUIKitCallWithInvitationDemoOC */ = {
+			isa = PBXGroup;
+			children = (
+				86811E4D2C047EB500E0844D /* AppDelegate.h */,
+				86811E4E2C047EB500E0844D /* AppDelegate.m */,
+				86811E502C047EB500E0844D /* SceneDelegate.h */,
+				86811E512C047EB500E0844D /* SceneDelegate.m */,
+				86811E532C047EB500E0844D /* ViewController.h */,
+				86811E542C047EB500E0844D /* ViewController.m */,
+				86811E562C047EB500E0844D /* Main.storyboard */,
+				86811E592C047EB800E0844D /* Assets.xcassets */,
+				86811E5B2C047EB800E0844D /* LaunchScreen.storyboard */,
+				86811E5E2C047EB800E0844D /* Info.plist */,
+				86811E5F2C047EB800E0844D /* main.m */,
+			);
+			path = ZegoUIKitCallWithInvitationDemoOC;
+			sourceTree = "<group>";
+		};
+		86811E682C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				86811E692C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCTests.m */,
+			);
+			path = ZegoUIKitCallWithInvitationDemoOCTests;
+			sourceTree = "<group>";
+		};
+		86811E722C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				86811E732C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITests.m */,
+				86811E752C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITestsLaunchTests.m */,
+			);
+			path = ZegoUIKitCallWithInvitationDemoOCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86811E492C047EB500E0844D /* ZegoUIKitCallWithInvitationDemoOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86811E792C047EB800E0844D /* Build configuration list for PBXNativeTarget "ZegoUIKitCallWithInvitationDemoOC" */;
+			buildPhases = (
+				0C64DD2B2290926A1C82078C /* [CP] Check Pods Manifest.lock */,
+				86811E462C047EB500E0844D /* Sources */,
+				86811E472C047EB500E0844D /* Frameworks */,
+				86811E482C047EB500E0844D /* Resources */,
+				BDD5F664F28F329109B3CCFF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZegoUIKitCallWithInvitationDemoOC;
+			productName = ZegoUIKitCallWithInvitationDemoOC;
+			productReference = 86811E4A2C047EB500E0844D /* ZegoUIKitCallWithInvitationDemoOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86811E642C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86811E7C2C047EB800E0844D /* Build configuration list for PBXNativeTarget "ZegoUIKitCallWithInvitationDemoOCTests" */;
+			buildPhases = (
+				85B74891F2AF98E3F032B114 /* [CP] Check Pods Manifest.lock */,
+				86811E612C047EB800E0844D /* Sources */,
+				86811E622C047EB800E0844D /* Frameworks */,
+				86811E632C047EB800E0844D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86811E672C047EB800E0844D /* PBXTargetDependency */,
+			);
+			name = ZegoUIKitCallWithInvitationDemoOCTests;
+			productName = ZegoUIKitCallWithInvitationDemoOCTests;
+			productReference = 86811E652C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		86811E6E2C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86811E7F2C047EB800E0844D /* Build configuration list for PBXNativeTarget "ZegoUIKitCallWithInvitationDemoOCUITests" */;
+			buildPhases = (
+				16F85F43F623B4B1E0F7A534 /* [CP] Check Pods Manifest.lock */,
+				86811E6B2C047EB800E0844D /* Sources */,
+				86811E6C2C047EB800E0844D /* Frameworks */,
+				86811E6D2C047EB800E0844D /* Resources */,
+				0AFB0EE913BE08926D31F302 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86811E712C047EB800E0844D /* PBXTargetDependency */,
+			);
+			name = ZegoUIKitCallWithInvitationDemoOCUITests;
+			productName = ZegoUIKitCallWithInvitationDemoOCUITests;
+			productReference = 86811E6F2C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86811E422C047EB500E0844D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					86811E492C047EB500E0844D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					86811E642C047EB800E0844D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 86811E492C047EB500E0844D;
+					};
+					86811E6E2C047EB800E0844D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 86811E492C047EB500E0844D;
+					};
+				};
+			};
+			buildConfigurationList = 86811E452C047EB500E0844D /* Build configuration list for PBXProject "ZegoUIKitCallWithInvitationDemoOC" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86811E412C047EB500E0844D;
+			productRefGroup = 86811E4B2C047EB500E0844D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86811E492C047EB500E0844D /* ZegoUIKitCallWithInvitationDemoOC */,
+				86811E642C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCTests */,
+				86811E6E2C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86811E482C047EB500E0844D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86811E5A2C047EB800E0844D /* Assets.xcassets in Resources */,
+				86811E5D2C047EB800E0844D /* Base in Resources */,
+				86811E582C047EB500E0844D /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86811E632C047EB800E0844D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86811E6D2C047EB800E0844D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AFB0EE913BE08926D31F302 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests/Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests/Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests/Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C64DD2B2290926A1C82078C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZegoUIKitCallWithInvitationDemoOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16F85F43F623B4B1E0F7A534 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85B74891F2AF98E3F032B114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZegoUIKitCallWithInvitationDemoOCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDD5F664F28F329109B3CCFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitCallWithInvitationDemoOC/Pods-ZegoUIKitCallWithInvitationDemoOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitCallWithInvitationDemoOC/Pods-ZegoUIKitCallWithInvitationDemoOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZegoUIKitCallWithInvitationDemoOC/Pods-ZegoUIKitCallWithInvitationDemoOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86811E462C047EB500E0844D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86811E552C047EB500E0844D /* ViewController.m in Sources */,
+				86811E4F2C047EB500E0844D /* AppDelegate.m in Sources */,
+				86811E602C047EB800E0844D /* main.m in Sources */,
+				86811E522C047EB500E0844D /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86811E612C047EB800E0844D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86811E6A2C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86811E6B2C047EB800E0844D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86811E762C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITestsLaunchTests.m in Sources */,
+				86811E742C047EB800E0844D /* ZegoUIKitCallWithInvitationDemoOCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86811E672C047EB800E0844D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86811E492C047EB500E0844D /* ZegoUIKitCallWithInvitationDemoOC */;
+			targetProxy = 86811E662C047EB800E0844D /* PBXContainerItemProxy */;
+		};
+		86811E712C047EB800E0844D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86811E492C047EB500E0844D /* ZegoUIKitCallWithInvitationDemoOC */;
+			targetProxy = 86811E702C047EB800E0844D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86811E562C047EB500E0844D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86811E572C047EB500E0844D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86811E5B2C047EB800E0844D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86811E5C2C047EB800E0844D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86811E772C047EB800E0844D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		86811E782C047EB800E0844D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86811E7A2C047EB800E0844D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F4AAD26158E59552BCDF2B /* Pods-ZegoUIKitCallWithInvitationDemoOC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PN83KX5U85;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZegoUIKitCallWithInvitationDemoOC/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "相机";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "麦克风";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zego.ZegoUIKitCallWithInvitationDemoOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86811E7B2C047EB800E0844D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE6C36826B1A05CB4266E272 /* Pods-ZegoUIKitCallWithInvitationDemoOC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PN83KX5U85;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZegoUIKitCallWithInvitationDemoOC/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "相机";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "麦克风";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zego.ZegoUIKitCallWithInvitationDemoOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86811E7D2C047EB800E0844D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 981959DA943FB53428E78935 /* Pods-ZegoUIKitCallWithInvitationDemoOCTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PN83KX5U85;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zego.ZegoUIKitCallWithInvitationDemoOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZegoUIKitCallWithInvitationDemoOC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZegoUIKitCallWithInvitationDemoOC";
+			};
+			name = Debug;
+		};
+		86811E7E2C047EB800E0844D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92D5426F9A560EB073F9D418 /* Pods-ZegoUIKitCallWithInvitationDemoOCTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PN83KX5U85;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zego.ZegoUIKitCallWithInvitationDemoOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZegoUIKitCallWithInvitationDemoOC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZegoUIKitCallWithInvitationDemoOC";
+			};
+			name = Release;
+		};
+		86811E802C047EB800E0844D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E45A214FCCDA29B93AA7F8 /* Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PN83KX5U85;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zego.ZegoUIKitCallWithInvitationDemoOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZegoUIKitCallWithInvitationDemoOC;
+			};
+			name = Debug;
+		};
+		86811E812C047EB800E0844D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B11BA713C12A23F969E1B70B /* Pods-ZegoUIKitCallWithInvitationDemoOC-ZegoUIKitCallWithInvitationDemoOCUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PN83KX5U85;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zego.ZegoUIKitCallWithInvitationDemoOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZegoUIKitCallWithInvitationDemoOC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86811E452C047EB500E0844D /* Build configuration list for PBXProject "ZegoUIKitCallWithInvitationDemoOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86811E772C047EB800E0844D /* Debug */,
+				86811E782C047EB800E0844D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86811E792C047EB800E0844D /* Build configuration list for PBXNativeTarget "ZegoUIKitCallWithInvitationDemoOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86811E7A2C047EB800E0844D /* Debug */,
+				86811E7B2C047EB800E0844D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86811E7C2C047EB800E0844D /* Build configuration list for PBXNativeTarget "ZegoUIKitCallWithInvitationDemoOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86811E7D2C047EB800E0844D /* Debug */,
+				86811E7E2C047EB800E0844D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86811E7F2C047EB800E0844D /* Build configuration list for PBXNativeTarget "ZegoUIKitCallWithInvitationDemoOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86811E802C047EB800E0844D /* Debug */,
+				86811E812C047EB800E0844D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86811E422C047EB500E0844D /* Project object */;
+}

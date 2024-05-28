@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgD-AG-HLv" userLabel="voiceCallView">
+                                <rect key="frame" x="326" y="171" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="J8V-lT-TWS"/>
+                                    <constraint firstAttribute="width" constant="40" id="YAu-Jb-bga"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNq-ai-tl3" userLabel="videoCallView">
+                                <rect key="frame" x="253" y="169" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="65L-I0-Mrq"/>
+                                    <constraint firstAttribute="height" constant="40" id="lgC-yr-iz6"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="please input invitees userID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DgR-Ng-Pdj" userLabel="inviteesTextField">
+                                <rect key="frame" x="26" y="171" width="195" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5qL-p9-jR1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57l-EY-cFQ" userLabel="yourUserIDLabel">
+                                <rect key="frame" x="33" y="122" width="274" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DgR-Ng-Pdj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="1gE-H4-tL6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RNq-ai-tl3" secondAttribute="trailing" constant="100" id="B4r-Yn-GvS"/>
+                            <constraint firstItem="RNq-ai-tl3" firstAttribute="leading" secondItem="DgR-Ng-Pdj" secondAttribute="trailing" constant="32" id="TH6-tD-z2D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tgD-AG-HLv" secondAttribute="trailing" constant="27" id="WVZ-S7-9wR"/>
+                            <constraint firstItem="tgD-AG-HLv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="mEo-nS-MJp"/>
+                            <constraint firstItem="RNq-ai-tl3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="pZk-xx-ay0"/>
+                            <constraint firstItem="DgR-Ng-Pdj" firstAttribute="bottom" secondItem="tgD-AG-HLv" secondAttribute="bottom" id="r2i-74-J9e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inviteesTextField" destination="DgR-Ng-Pdj" id="zaC-PW-tkG"/>
+                        <outlet property="videoCallView" destination="RNq-ai-tl3" id="S52-wb-f3q"/>
+                        <outlet property="voiceCallView" destination="tgD-AG-HLv" id="S3U-nV-kaI"/>
+                        <outlet property="yourUserIDLabel" destination="57l-EY-cFQ" id="U07-5B-jnj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-48.091603053435115" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

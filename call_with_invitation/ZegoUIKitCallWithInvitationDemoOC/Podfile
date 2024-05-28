@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+target 'ZegoUIKitCallWithInvitationDemoOC' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ZegoUIKitCallWithInvitationDemoOC
+  pod 'ZegoUIKitPrebuiltCall','>= 2.11.8'
+  pod 'ZegoUIKitSignalingPlugin'
+
+  pod 'Toast-Swift'
+  target 'ZegoUIKitCallWithInvitationDemoOCTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ZegoUIKitCallWithInvitationDemoOCUITests' do
+    # Pods for testing
+  end
+
+end
