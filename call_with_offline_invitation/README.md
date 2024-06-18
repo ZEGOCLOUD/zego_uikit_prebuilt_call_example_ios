@@ -29,6 +29,7 @@ Do the following to add the `ZegoUIKitPrebuiltCall` dependencies:
     ```
     pod 'ZegoUIKitPrebuiltCall'
     pod 'ZegoUIKitSignalingPlugin'
+    pod 'ZegoUIKitAppleCallKitPlugin'
     ```
 
 - In Terminal, run the following to download all required dependencies and SDK with Cocoapods:
