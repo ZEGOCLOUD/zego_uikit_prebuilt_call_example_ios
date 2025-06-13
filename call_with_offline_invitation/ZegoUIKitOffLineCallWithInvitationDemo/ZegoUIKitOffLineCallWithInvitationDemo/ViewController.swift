@@ -13,9 +13,6 @@ import ZegoUIKitSignalingPlugin
 
 class ViewController: UIViewController {
     
-    let appID: UInt32 = <#YourAppID#>
-    let appSign: String = <#YourAppSign#>
-    
     let selfUserID: String = UserDefaults.standard.object(forKey: "userID") == nil ? String(format: "%d", Int.random(in: 0...99999)) :  UserDefaults.standard.object(forKey: "userID") as! String
     
     @IBOutlet weak var voiceCallView: UIView! {
@@ -59,7 +56,7 @@ class ViewController: UIViewController {
         voiceCallButton.resourceID = "zego_data"
         videoCallButton.resourceID = "zego_data"
         let userName: String = selfUserID
-        ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(self.appID, appSign: self.appSign, userID: selfUserID, userName: userName, config: config)
+        ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(KeyCenter.appID, appSign: KeyCenter.appSign, userID: selfUserID, userName: userName, config: config)
         ZegoUIKitPrebuiltCallInvitationService.shared.delegate = self
         UserDefaults.standard.set(selfUserID, forKey: "userID")
         UserDefaults.standard.synchronize()
