@@ -132,6 +132,8 @@ extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UIText
                 return config
             } else {
                 let config = ZegoUIKitPrebuiltCallConfig.oneOnOneVoiceCall()
+                config.topMenuBarConfig.isVisible = true
+                config.topMenuBarConfig.buttons = [.minimizingButton]
                 return config
             }
         } else {
@@ -140,6 +142,8 @@ extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UIText
                 return config
             } else {
                 let config = ZegoUIKitPrebuiltCallConfig.oneOnOneVideoCall()
+                config.topMenuBarConfig.isVisible = true
+                config.topMenuBarConfig.buttons = [.minimizingButton]
                 return config
             }
         }
