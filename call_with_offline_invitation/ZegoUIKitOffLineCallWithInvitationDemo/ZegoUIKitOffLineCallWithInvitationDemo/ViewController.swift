@@ -54,7 +54,13 @@ class ViewController: UIViewController {
         
         //resourceID can be used to specify the ringtone of an offline call invitation, which must be set to the same value as the Push Resource ID in ZEGOCLOUD Admin Console. This only takes effect when the notifyWhenAppRunningInBackgroundOrQuit is true.
         voiceCallButton.resourceID = "zego_data"
+        voiceCallButton.customData = ""
+        voiceCallButton.timeout = 60
+
         videoCallButton.resourceID = "zego_data"
+        videoCallButton.customData = ""
+        videoCallButton.timeout = 60
+
         let userName: String = selfUserID
         ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(KeyCenter.appID, appSign: KeyCenter.appSign, userID: selfUserID, userName: userName, config: config)
         ZegoUIKitPrebuiltCallInvitationService.shared.delegate = self
