@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ZegoUIKitPrebuiltCall
 
 class KeyCenter {
     static let appID: UInt32 = <#YOUR_APP_ID#>

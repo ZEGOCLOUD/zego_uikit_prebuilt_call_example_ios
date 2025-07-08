@@ -52,7 +52,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //resourceID can be used to specify the ringtone of an offline call invitation, which must be set to the same value as the Push Resource ID in ZEGOCLOUD Admin Console. This only takes effect when the notifyWhenAppRunningInBackgroundOrQuit is true.
+        // resourceID can be used to specify the ringtone of an offline call invitation,
+        // which must be set to the same value as the Push Resource ID in ZEGOCLOUD Admin Console.
+        // This only takes effect when the notifyWhenAppRunningInBackgroundOrQuit is true.
         voiceCallButton.resourceID = "zego_data"
         voiceCallButton.customData = ""
         voiceCallButton.timeout = 60
@@ -62,7 +64,9 @@ class ViewController: UIViewController {
         videoCallButton.timeout = 60
 
         let userName: String = selfUserID
-        ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(KeyCenter.appID, appSign: KeyCenter.appSign, userID: selfUserID, userName: userName, config: config)
+        ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(KeyCenter.appID, appSign: KeyCenter.appSign, userID: selfUserID, userName: userName, config: config, callback: { errorCode, message in
+            print("CallInvitationService init, error:\(errorCode), message:\(message)")
+        })
         ZegoUIKitPrebuiltCallInvitationService.shared.delegate = self
         UserDefaults.standard.set(selfUserID, forKey: "userID")
         UserDefaults.standard.synchronize()
