@@ -46,8 +46,11 @@ class ViewController: UIViewController {
     }
     let voiceCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.voiceCall.rawValue)
     let videoCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.videoCall.rawValue)
-    
-    var config: ZegoUIKitPrebuiltCallInvitationConfig = ZegoUIKitPrebuiltCallInvitationConfig(notifyWhenAppRunningInBackgroundOrQuit: true, isSandboxEnvironment: true)
+        
+    var config: ZegoUIKitPrebuiltCallInvitationConfig = ZegoUIKitPrebuiltCallInvitationConfig(
+        notifyWhenAppRunningInBackgroundOrQuit: true,
+        isSandboxEnvironment: true                          // Update later
+    )
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +67,11 @@ class ViewController: UIViewController {
         videoCallButton.timeout = 60
 
         let userName: String = selfUserID
+#if DEBUG
+        config.isSandboxEnvironment = true
+#else
+        config.isSandboxEnvironment = false
+#endif
         ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(KeyCenter.appID, appSign: KeyCenter.appSign, userID: selfUserID, userName: userName, config: config, callback: { errorCode, message in
             print("CallInvitationService init, error:\(errorCode), message:\(message)")
         })
