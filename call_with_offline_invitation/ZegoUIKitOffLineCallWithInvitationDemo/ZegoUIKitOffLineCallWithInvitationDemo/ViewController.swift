@@ -11,7 +11,7 @@ import Toast_Swift
 import ZegoUIKitPrebuiltCall
 import ZegoUIKitSignalingPlugin
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ZegoUIKitPrebuiltCallVCDelegate {
     
     let selfUserID: String = UserDefaults.standard.object(forKey: "userID") == nil ? String(format: "%d", Int.random(in: 0...99999)) :  UserDefaults.standard.object(forKey: "userID") as! String
     
@@ -72,10 +72,13 @@ class ViewController: UIViewController {
 #else
         config.isSandboxEnvironment = false
 #endif
-        ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(KeyCenter.appID, appSign: KeyCenter.appSign, userID: selfUserID, userName: userName, config: config, callback: { errorCode, message in
-            print("CallInvitationService init, error:\(errorCode), message:\(message)")
-        })
+
         ZegoUIKitPrebuiltCallInvitationService.shared.delegate = self
+        ZegoUIKitPrebuiltCallInvitationService.shared.callVCDelegate = self
+        ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(KeyCenter.appID, appSign: KeyCenter.appSign, userID: selfUserID, userName: userName, config: config, callback: { errorCode, message in
+            LogManager.sharedInstance().write("[Demo][ViewController][viewDidLoad] ZegoUIKitPrebuiltCallInvitationService init, error:\(errorCode), message:\(message)")
+        })
+
         UserDefaults.standard.set(selfUserID, forKey: "userID")
         UserDefaults.standard.synchronize()
     }
@@ -142,7 +145,8 @@ extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UIText
         }
     }
 
-    //MARK: -ZegoUIKitPrebuiltCallInvitationServiceDelegate
+    // MARK: ZegoUIKitPrebuiltCallInvitationServiceDelegate
+
     func requireConfig(_ data: ZegoCallInvitationData) -> ZegoUIKitPrebuiltCallConfig {
         if data.type == .voiceCall {
             if data.invitees?.count ?? 0 > 1 {
@@ -178,10 +182,13 @@ extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UIText
     }
     
     func onIncomingCallReceived(_ callID: String, caller: ZegoCallUser, callType: ZegoCallType, callees: [ZegoCallUser]?) {
-        
+        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallReceived] caller:\(caller.id ?? ""), callID:\(callID)")
     }
     func onIncomingCallCanceled(_ callID: String, caller: ZegoCallUser) {
-        
+        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallCanceled] caller:\(caller.id ?? ""), callID:\(callID)")
+    }
+    func onIncomingCallTimeout(_ callID: String,  caller: ZegoCallUser){
+        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallTimeout] caller:\(caller.id ?? ""), callID:\(callID)")
     }
     func onOutgoingCallAccepted(_ callID: String, callee: ZegoCallUser) {
         
@@ -192,13 +199,16 @@ extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UIText
     func onOutgoingCallDeclined(_ callID: String, callee: ZegoCallUser) {
         
     }
-    func onIncomingCallTimeout(_ callID: String,  caller: ZegoCallUser){
-        
-    }
     func onOutgoingCallTimeout(_ callID: String, callees: [ZegoCallUser]) {
         
     }
     
+    // MARK: ZegoUIKitPrebuiltCallVCDelegate
+    
+    func onToggleMicButtonClick(_ isOn: Bool) {
+        LogManager.sharedInstance().write("[Demo][ViewController][onToggleMicButtonClick] isOn:\(isOn)")
+    }
+
     func getCurrentViewController() -> (UIViewController?) {
        var window = UIApplication.shared.keyWindow
        if window?.windowLevel != UIWindow.Level.normal{
