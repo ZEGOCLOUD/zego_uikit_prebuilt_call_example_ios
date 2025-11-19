@@ -492,9 +492,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ZegoUIKitOffLineCallWithInvitationDemo/ZegoUIKitOffLineCallWithInvitationDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PN83KX5U85;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZegoUIKitOffLineCallWithInvitationDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ZegoPrebuiltCall;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to help you join the call.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need to use your mic to help you join the call.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -506,7 +508,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.14.2;
+				MARKETING_VERSION = 2.16.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zegocloud.zegouikit.example.prebuiltcall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -523,9 +525,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ZegoUIKitOffLineCallWithInvitationDemo/ZegoUIKitOffLineCallWithInvitationDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PN83KX5U85;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZegoUIKitOffLineCallWithInvitationDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ZegoPrebuiltCall;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to help you join the call.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need to use your mic to help you join the call.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -537,7 +541,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.14.2;
+				MARKETING_VERSION = 2.16.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zegocloud.zegouikit.example.prebuiltcall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

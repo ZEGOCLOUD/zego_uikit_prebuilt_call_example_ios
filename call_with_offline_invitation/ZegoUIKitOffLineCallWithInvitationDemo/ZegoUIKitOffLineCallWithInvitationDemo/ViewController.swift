@@ -6,10 +6,10 @@
 //
 
 import UIKit
-import ZegoUIKit
 import Toast_Swift
 import ZegoUIKitPrebuiltCall
 import ZegoUIKitSignalingPlugin
+import ZegoPrebuiltLog
 
 class ViewController: UIViewController, ZegoUIKitPrebuiltCallVCDelegate {
     
@@ -38,12 +38,19 @@ class ViewController: UIViewController, ZegoUIKitPrebuiltCallVCDelegate {
         }
     }
     
-    
     @IBOutlet weak var yourUserIDLabel: UILabel! {
         didSet {
             yourUserIDLabel.text = String(format: "Your UserID:%@", selfUserID)
         }
     }
+
+    @IBOutlet weak var shareLogsLabel: UILabel! {
+        didSet {
+            shareLogsLabel.text = "Share Logs"
+        }
+    }
+    
+    
     let voiceCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.voiceCall.rawValue)
     let videoCallButton: ZegoSendCallInvitationButton = ZegoSendCallInvitationButton(ZegoInvitationType.videoCall.rawValue)
         
@@ -76,11 +83,15 @@ class ViewController: UIViewController, ZegoUIKitPrebuiltCallVCDelegate {
         ZegoUIKitPrebuiltCallInvitationService.shared.delegate = self
         ZegoUIKitPrebuiltCallInvitationService.shared.callVCDelegate = self
         ZegoUIKitPrebuiltCallInvitationService.shared.initWithAppID(KeyCenter.appID, appSign: KeyCenter.appSign, userID: selfUserID, userName: userName, config: config, callback: { errorCode, message in
-            LogManager.sharedInstance().write("[Demo][ViewController][viewDidLoad] ZegoUIKitPrebuiltCallInvitationService init, error:\(errorCode), message:\(message)")
+            ZegoPrebuiltLog.shared.write("[Demo][ViewController][viewDidLoad] ZegoUIKitPrebuiltCallInvitationService init, error:\(errorCode), message:\(message)")
         })
 
         UserDefaults.standard.set(selfUserID, forKey: "userID")
         UserDefaults.standard.synchronize()
+        
+        shareLogsLabel.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleShareLogsTap))
+        shareLogsLabel.addGestureRecognizer(tap)
     }
     
     @objc func textDidChange(_ textField: UITextField) {
@@ -111,6 +122,16 @@ class ViewController: UIViewController, ZegoUIKitPrebuiltCallVCDelegate {
         } else {
             self.config.showDeclineButton = false
         }
+    }
+    
+    @objc private func handleShareLogsTap() {
+        guard let zipURL = ZegoPrebuiltLog.shared.zipLogFiles() else { return }
+        let activityVC = UIActivityViewController(activityItems: [zipURL], applicationActivities: nil)
+        if let pop = activityVC.popoverPresentationController {
+            pop.sourceView = self.view
+            pop.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+        }
+        self.present(activityVC, animated: true, completion: nil)
     }
 }
 
@@ -172,41 +193,41 @@ extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UIText
     }
     
     func onIncomingCallDeclineButtonPressed() {
-        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallDeclineButtonPressed]")
+        ZegoPrebuiltLog.shared.write("[Demo][ViewController][onIncomingCallDeclineButtonPressed]")
     }
     func onIncomingCallAcceptButtonPressed() {
-        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallDeclineButtonPressed]")
+        ZegoPrebuiltLog.shared.write("[Demo][ViewController][onIncomingCallDeclineButtonPressed]")
     }
     func onOutgoingCallCancelButtonPressed() {
-        LogManager.sharedInstance().write("[Demo][ViewController][onOutgoingCallCancelButtonPressed]")
+        ZegoPrebuiltLog.shared.write("[Demo][ViewController][onOutgoingCallCancelButtonPressed]")
     }
     
     func onIncomingCallReceived(_ callID: String, caller: ZegoCallUser, callType: ZegoCallType, callees: [ZegoCallUser]?) {
-        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallReceived] callID:\(callID), caller:\(caller.id ?? "")")
+        ZegoPrebuiltLog.shared.write("[Demo][ViewController][onIncomingCallReceived] callID:\(callID), caller:\(caller.id ?? "")")
     }
     func onIncomingCallCanceled(_ callID: String, caller: ZegoCallUser) {
-        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallCanceled] callID:\(callID), caller:\(caller.id ?? "")")
+        ZegoPrebuiltLog.shared.write("[Demo][ViewController][onIncomingCallCanceled] callID:\(callID), caller:\(caller.id ?? "")")
     }
     func onIncomingCallTimeout(_ callID: String,  caller: ZegoCallUser){
-        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallTimeout] callID:\(callID), caller:\(caller.id ?? "")")
+        ZegoPrebuiltLog.shared.write("[Demo][ViewController][onIncomingCallTimeout] callID:\(callID), caller:\(caller.id ?? "")")
     }
     func onOutgoingCallAccepted(_ callID: String, callee: ZegoCallUser) {
-        LogManager.sharedInstance().write("[Demo][ViewController][onOutgoingCallAccepted] callID:\(callID), callee:\(callee.id ?? "")")
+        ZegoPrebuiltLog.shared.write("[Demo][ViewController][onOutgoingCallAccepted] callID:\(callID), callee:\(callee.id ?? "")")
     }
     func onOutgoingCallRejectedCauseBusy(_ callID: String, callee: ZegoCallUser) {
-        LogManager.sharedInstance().write("[Demo][ViewController][onOutgoingCallRejectedCauseBusy] callID:\(callID), callee:\(callee.id ?? "")")
+        ZegoPrebuiltLog.shared.write("[Demo][ViewController][onOutgoingCallRejectedCauseBusy] callID:\(callID), callee:\(callee.id ?? "")")
     }
     func onOutgoingCallDeclined(_ callID: String, callee: ZegoCallUser) {
-        LogManager.sharedInstance().write("[Demo][ViewController][onOutgoingCallDeclined] callID:\(callID), callee:\(callee.id ?? "")")
+        ZegoPrebuiltLog.shared.write("[Demo][ViewController][onOutgoingCallDeclined] callID:\(callID), callee:\(callee.id ?? "")")
     }
     func onOutgoingCallTimeout(_ callID: String, callees: [ZegoCallUser]) {
-        LogManager.sharedInstance().write("[Demo][ViewController][onOutgoingCallTimeout] callID:\(callID)")
+        ZegoPrebuiltLog.shared.write("[Demo][ViewController][onOutgoingCallTimeout] callID:\(callID)")
     }
     
     // MARK: ZegoUIKitPrebuiltCallVCDelegate
     
     func onToggleMicButtonClick(_ isOn: Bool) {
-        LogManager.sharedInstance().write("[Demo][ViewController][onToggleMicButtonClick] isOn:\(isOn)")
+        ZegoPrebuiltLog.shared.write("[Demo][ViewController][onToggleMicButtonClick] isOn:\(isOn)")
     }
 
     func getCurrentViewController() -> (UIViewController?) {
