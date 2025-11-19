@@ -172,35 +172,35 @@ extension ViewController: ZegoUIKitPrebuiltCallInvitationServiceDelegate, UIText
     }
     
     func onIncomingCallDeclineButtonPressed() {
-        
+        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallDeclineButtonPressed]")
     }
     func onIncomingCallAcceptButtonPressed() {
-        
+        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallDeclineButtonPressed]")
     }
     func onOutgoingCallCancelButtonPressed() {
-        
+        LogManager.sharedInstance().write("[Demo][ViewController][onOutgoingCallCancelButtonPressed]")
     }
     
     func onIncomingCallReceived(_ callID: String, caller: ZegoCallUser, callType: ZegoCallType, callees: [ZegoCallUser]?) {
-        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallReceived] caller:\(caller.id ?? ""), callID:\(callID)")
+        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallReceived] callID:\(callID), caller:\(caller.id ?? "")")
     }
     func onIncomingCallCanceled(_ callID: String, caller: ZegoCallUser) {
-        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallCanceled] caller:\(caller.id ?? ""), callID:\(callID)")
+        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallCanceled] callID:\(callID), caller:\(caller.id ?? "")")
     }
     func onIncomingCallTimeout(_ callID: String,  caller: ZegoCallUser){
-        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallTimeout] caller:\(caller.id ?? ""), callID:\(callID)")
+        LogManager.sharedInstance().write("[Demo][ViewController][onIncomingCallTimeout] callID:\(callID), caller:\(caller.id ?? "")")
     }
     func onOutgoingCallAccepted(_ callID: String, callee: ZegoCallUser) {
-        
+        LogManager.sharedInstance().write("[Demo][ViewController][onOutgoingCallAccepted] callID:\(callID), callee:\(callee.id ?? "")")
     }
     func onOutgoingCallRejectedCauseBusy(_ callID: String, callee: ZegoCallUser) {
-        
+        LogManager.sharedInstance().write("[Demo][ViewController][onOutgoingCallRejectedCauseBusy] callID:\(callID), callee:\(callee.id ?? "")")
     }
     func onOutgoingCallDeclined(_ callID: String, callee: ZegoCallUser) {
-        
+        LogManager.sharedInstance().write("[Demo][ViewController][onOutgoingCallDeclined] callID:\(callID), callee:\(callee.id ?? "")")
     }
     func onOutgoingCallTimeout(_ callID: String, callees: [ZegoCallUser]) {
-        
+        LogManager.sharedInstance().write("[Demo][ViewController][onOutgoingCallTimeout] callID:\(callID)")
     }
     
     // MARK: ZegoUIKitPrebuiltCallVCDelegate

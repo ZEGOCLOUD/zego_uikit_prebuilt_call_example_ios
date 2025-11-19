@@ -6,10 +6,9 @@ target 'ZegoUIKitOffLineCallWithInvitationDemo' do
 
   pod 'Toast-Swift'
   
-  pod 'ZegoUIKit', '>=2.13.5'
-  pod 'ZegoUIKitPrebuiltCall', '>=2.14.2'
-  pod 'ZegoUIKitAppleCallKitPlugin', '>=1.0.4'
-  pod 'ZegoUIKitSignalingPlugin', '>=2.5.5'
+  pod 'ZegoUIKitPrebuiltCall', '>= 2.14.5'
+  pod 'ZegoUIKitAppleCallKitPlugin', '>= 1.1.1'
+  pod 'ZegoUIKitSignalingPlugin', '>= 2.5.5'
   
   post_install do |installer|
       installer.generated_projects.each do |project|
@@ -17,9 +16,9 @@ target 'ZegoUIKitOffLineCallWithInvitationDemo' do
             target.build_configurations.each do |config|
                 config.build_settings['CODE_SIGN_IDENTITY'] = ''
                 config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
-             end
+            end
         end
       end
-    end
+  end
 
 end
