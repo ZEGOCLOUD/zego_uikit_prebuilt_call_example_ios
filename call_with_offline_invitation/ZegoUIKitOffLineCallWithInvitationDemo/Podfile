@@ -6,7 +6,7 @@ target 'ZegoUIKitOffLineCallWithInvitationDemo' do
 
   pod 'Toast-Swift'
   
-  pod 'ZegoUIKitPrebuiltCall', '>= 2.16.0'
+  pod 'ZegoUIKitPrebuiltCall', '>= 2.16.1'
   pod 'ZegoUIKitAppleCallKitPlugin', '>= 1.2.0'
   pod 'ZegoUIKitSignalingPlugin', '>= 2.5.5'
   
